@@ -4,9 +4,6 @@
         <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="isDone" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="lesson" optional="YES" attributeType="String"/>
-        <attribute name="text" optional="YES" attributeType="String" spotlightIndexingEnabled="YES"/>
-    </entity>
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
     </entity>
 </model>

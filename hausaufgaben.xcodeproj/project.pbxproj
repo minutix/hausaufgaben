@@ -12,7 +12,8 @@
 		15A493002912D8F600A22C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A492FF2912D8F600A22C72 /* Assets.xcassets */; };
 		15A493032912D8F600A22C72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A493022912D8F600A22C72 /* Preview Assets.xcassets */; };
 		15A493052912D8F600A22C72 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A493042912D8F600A22C72 /* Persistence.swift */; };
-		15A493082912D8F600A22C72 /* hausaufgaben.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15A493062912D8F600A22C72 /* hausaufgaben.xcdatamodeld */; };
+		15A493152912E7AE00A22C72 /* homework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15A493122912E5C500A22C72 /* homework.xcdatamodeld */; };
+		15BEC7962912F9810055D81E /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEC7952912F9810055D81E /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,8 @@
 		15A492FF2912D8F600A22C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15A493022912D8F600A22C72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15A493042912D8F600A22C72 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		15A493072912D8F600A22C72 /* hausaufgaben.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hausaufgaben.xcdatamodel; sourceTree = "<group>"; };
+		15A493132912E5C500A22C72 /* homework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = homework.xcdatamodel; sourceTree = "<group>"; };
+		15BEC7952912F9810055D81E /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,10 @@
 			children = (
 				15A492FB2912D8F500A22C72 /* hausaufgabenApp.swift */,
 				15A492FD2912D8F500A22C72 /* ContentView.swift */,
+				15BEC7952912F9810055D81E /* AddView.swift */,
+				15A493122912E5C500A22C72 /* homework.xcdatamodeld */,
 				15A492FF2912D8F600A22C72 /* Assets.xcassets */,
 				15A493042912D8F600A22C72 /* Persistence.swift */,
-				15A493062912D8F600A22C72 /* hausaufgaben.xcdatamodeld */,
 				15A493012912D8F600A22C72 /* Preview Content */,
 			);
 			path = hausaufgaben;
@@ -145,8 +148,9 @@
 			files = (
 				15A493052912D8F600A22C72 /* Persistence.swift in Sources */,
 				15A492FE2912D8F500A22C72 /* ContentView.swift in Sources */,
+				15BEC7962912F9810055D81E /* AddView.swift in Sources */,
 				15A492FC2912D8F500A22C72 /* hausaufgabenApp.swift in Sources */,
-				15A493082912D8F600A22C72 /* hausaufgaben.xcdatamodeld in Sources */,
+				15A493152912E7AE00A22C72 /* homework.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,13 +351,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		15A493062912D8F600A22C72 /* hausaufgaben.xcdatamodeld */ = {
+		15A493122912E5C500A22C72 /* homework.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				15A493072912D8F600A22C72 /* hausaufgaben.xcdatamodel */,
+				15A493132912E5C500A22C72 /* homework.xcdatamodel */,
 			);
-			currentVersion = 15A493072912D8F600A22C72 /* hausaufgaben.xcdatamodel */;
-			path = hausaufgaben.xcdatamodeld;
+			currentVersion = 15A493132912E5C500A22C72 /* homework.xcdatamodel */;
+			path = homework.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
