@@ -19,40 +19,46 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(items) { item in
-                    HStack {
-                        VStack {
-                            HStack {
-                                Text(item.lesson ?? "item.lesson")
-                                Spacer()
+            
+            VStack {
+                Text("Homework")
+                    .font(.largeTitle)
+                    .bold()
+                List {
+                    ForEach(items) { item in
+                        HStack {
+                            VStack {
+                                HStack {
+                                    Text(item.lesson ?? "item.lesson")
+                                    Spacer()
+                                }
+                                HStack {
+                                    Text("\(item.text ?? "item.text") \(item.dueDate != nil ? "—" : "" ) \(item.dueDate?.formatted(date: .numeric, time: .omitted) ?? "")")
+                                    Spacer()
+                                }
                             }
-                            HStack {
-                                Text("\(item.text ?? "item.text") \(item.dueDate != nil ? "—" : "" ) \(item.dueDate?.formatted(date: .numeric, time: .omitted) ?? "")")
-                                Spacer()
+                            Spacer()
+                            Button {
+                                items[items.firstIndex(of: item)!].isDone.toggle()
+                            } label: {
+                                Image(systemName: "checkmark.circle\(item.isDone ? ".fill" : "")")
                             }
                         }
-                        Spacer()
-                        Button {
-                            items[items.firstIndex(of: item)!].isDone.toggle()
+                    }
+                    .onDelete(perform: deleteItems)
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        EditButton()
+                    }
+                    ToolbarItem {
+                        NavigationLink {
+                            AddView()
                         } label: {
-                            Image(systemName: "checkmark.circle\(item.isDone ? ".fill" : "")")
+                            Image(systemName: "plus")
                         }
                     }
-                }
-                .onDelete(perform: deleteItems)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    NavigationLink {
-                        AddView()
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                }
             }
             Text("Select an item")
         }.navigationTitle(Text("Homework"))

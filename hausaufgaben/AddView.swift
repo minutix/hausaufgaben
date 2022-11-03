@@ -23,7 +23,9 @@ struct AddView: View {
             if hasDueDate {
                 DatePicker(selection: $dueDate, displayedComponents: [.date], label: {Text("Due Date")})
             }
+            Spacer()
         }
+        .navigationTitle("Add Item")
         .padding()
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
