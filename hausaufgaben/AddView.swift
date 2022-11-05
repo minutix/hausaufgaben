@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject var entries: Entries
     @State var text = ""
     @State var lesson = ""
     @State var hasDueDate = true
@@ -41,19 +41,7 @@ struct AddView: View {
     
     func addItem() {
         withAnimation {
-            let newItem = Homework(context: viewContext)
-            newItem.text = text
-            newItem.lesson = lesson
-            newItem.dueDate = hasDueDate ? dueDate : nil
-            
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+            entries.listContent.append(Homework(lesson: lesson, text: text, dueDate: hasDueDate ? dueDate : nil))
         }
     }
 }
@@ -61,5 +49,6 @@ struct AddView: View {
 struct AddView_Previews: PreviewProvider {
     static var previews: some View {
         AddView()
+            .environmentObject(Entries())
     }
 }

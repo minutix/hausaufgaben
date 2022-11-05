@@ -9,12 +9,21 @@ import SwiftUI
 
 @main
 struct hausaufgabenApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(Entries())
         }
     }
+}
+
+struct Homework: Hashable {
+    var lesson: String
+    var text: String
+    var dueDate: Date?
+    var isDone = false
+}
+
+final class Entries: ObservableObject {
+    @Published var listContent: [Homework] = []
 }
