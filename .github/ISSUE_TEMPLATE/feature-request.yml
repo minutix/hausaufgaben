@@ -38,4 +38,4 @@ body:
       description: By submitting this issue, you confirm you conform to this repository's [Pledge of Allegiance](https://github.com/libewa/hausaufgaben/blob/main/CONTRIBUTING.md#pledge-of-allegiance)
       options:
         - label: I pledge the pledge of allegiance
-        required: true
+          required: true
