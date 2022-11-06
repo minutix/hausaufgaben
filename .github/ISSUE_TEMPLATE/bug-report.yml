@@ -1,0 +1,64 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you do before the bug happened?
+      placeholder: Open the app
+    validations:
+      required: true
+  - type: input
+    id: result
+    attributes:
+      label: Actual Result
+      description: What happened when you executed the steps you described above.
+      placeholder: The app crashed
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: Expected Result
+      description: What did you expect to happen when one executes the described steps?
+      placeholder: The app does not crash
+    validations:
+      required: true
+      
+  - type: textarea
+    id: log
+    attributes:
+      label: Crash log
+      description: (If applicable) The crash log that was generated when the development environment crashed
+      render: log
+  - type: textarea
+    id: notes
+    attributes:
+      label: Further notes
+      description: Do you have any other things to say?
+  
+  - type: markdown
+    attributes:
+      value: "# Checklist before submission"
+  - type: checkboxes
+    id: duplicate
+    attributes:
+      label: Not a Duplicate
+      description: I have checked that my issue is not a duplicate issue
+  
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you confirm you conform to this repository's [Pledge of Allegiance](https://github.com/libewa/hausaufgaben/blob/main/CONTRIBUTING.md#pledge-of-allegiance)
+      options:
+        - label: I pledge the pledge of allegiance
+          required: true
