@@ -10,8 +10,9 @@ body:
 
   - type: input
     id: short
-    label: Short Description
-    description: Give your feature a title/name
+    attributes:
+      label: Short Description
+      description: Give your feature a title/name
   
   - type: textarea
     id: long
