@@ -31,6 +31,8 @@ body:
     attributes:
       label: Not a Duplicate
       description: I have checked that my issue is not a duplicate issue
+      options:
+        - "Yes"
   
   - type: checkboxes
     id: terms
