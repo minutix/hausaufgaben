@@ -1,0 +1,35 @@
+name: Feature Request
+description: Request a feature to be added
+title: "[Feature: "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+        value: |
+            Thank you for submitting a feature request. Please use the form below to describe the wanted feature.
+  - type: input
+    label: Short Description
+    description: Give your feature a title/name
+  - type: textarea
+    attributes:
+        label: Long description
+        description: Describe the feature as close as possible.
+    validations:
+        required: true
+    - type: markdown
+    attributes:
+      value: "# Checklist before submission"
+  - type: checkboxes
+    id: duplicate
+    attributes:
+      label: Not a Duplicate
+      description: I have checked that my issue is not a duplicate issue
+  
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you confirm you conform to this repository's [Pledge of Allegiance](https://github.com/libewa/hausaufgaben/blob/main/CONTRIBUTING.md#pledge-of-allegiance)
+      options:
+        - label: I pledge the pledge of allegiance
+        required: true
