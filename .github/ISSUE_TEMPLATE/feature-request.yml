@@ -7,10 +7,12 @@ body:
     attributes:
         value: |
             Thank you for submitting a feature request. Please use the form below to describe the wanted feature.
+
   - type: input
     id: short
     label: Short Description
     description: Give your feature a title/name
+  
   - type: textarea
     id: long
     attributes:
@@ -18,9 +20,11 @@ body:
         description: Describe the feature as close as possible.
     validations:
         required: true
-    - type: markdown
+  
+  - type: markdown
     attributes:
       value: "# Checklist before submission"
+  
   - type: checkboxes
     id: duplicate
     attributes:

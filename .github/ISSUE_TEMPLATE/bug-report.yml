@@ -54,7 +54,7 @@ body:
       label: Not a Duplicate
       description: I have checked that my issue is not a duplicate issue
       options:
-        - label: Yes
+        - label: "Yes"
 
   
   - type: checkboxes
