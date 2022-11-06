@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151945992917A53B00B32719 /* hausaufgaben-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 151945972917A53B00B32719 /* hausaufgaben-InfoPlist.strings */; };
+		1519459C2917A53B00B32719 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1519459A2917A53B00B32719 /* Localizable.strings */; };
 		15A492FC2912D8F500A22C72 /* hausaufgabenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A492FB2912D8F500A22C72 /* hausaufgabenApp.swift */; };
 		15A492FE2912D8F500A22C72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A492FD2912D8F500A22C72 /* ContentView.swift */; };
 		15A493002912D8F600A22C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A492FF2912D8F600A22C72 /* Assets.xcassets */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151945982917A53B00B32719 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/hausaufgaben-InfoPlist.strings"; sourceTree = "<group>"; };
+		1519459B2917A53B00B32719 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1519459D2917A57000B32719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/hausaufgaben-InfoPlist.strings"; sourceTree = "<group>"; };
+		1519459E2917A57000B32719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		15A492F82912D8F500A22C72 /* hausaufgaben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hausaufgaben.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A492FB2912D8F500A22C72 /* hausaufgabenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hausaufgabenApp.swift; sourceTree = "<group>"; };
 		15A492FD2912D8F500A22C72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +47,8 @@
 		15A492EF2912D8F500A22C72 = {
 			isa = PBXGroup;
 			children = (
+				1519459A2917A53B00B32719 /* Localizable.strings */,
+				151945972917A53B00B32719 /* hausaufgaben-InfoPlist.strings */,
 				15A492FA2912D8F500A22C72 /* hausaufgaben */,
 				15A492F92912D8F500A22C72 /* Products */,
 			);
@@ -118,6 +126,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 15A492EF2912D8F500A22C72;
 			productRefGroup = 15A492F92912D8F500A22C72 /* Products */;
@@ -134,7 +143,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1519459C2917A53B00B32719 /* Localizable.strings in Resources */,
 				15A493032912D8F600A22C72 /* Preview Assets.xcassets in Resources */,
+				151945992917A53B00B32719 /* hausaufgaben-InfoPlist.strings in Resources */,
 				15A493002912D8F600A22C72 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +166,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		151945972917A53B00B32719 /* hausaufgaben-InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				151945982917A53B00B32719 /* de */,
+				1519459D2917A57000B32719 /* en */,
+			);
+			name = "hausaufgaben-InfoPlist.strings";
+			path = hausaufgaben;
+			sourceTree = "<group>";
+		};
+		1519459A2917A53B00B32719 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1519459B2917A53B00B32719 /* de */,
+				1519459E2917A57000B32719 /* en */,
+			);
+			name = Localizable.strings;
+			path = hausaufgaben;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		15A493092912D8F600A22C72 /* Debug */ = {
@@ -213,6 +247,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -266,6 +301,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -293,6 +329,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.libewa.hausaufgaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,6 +360,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.libewa.hausaufgaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

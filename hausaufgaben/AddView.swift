@@ -17,15 +17,15 @@ struct AddView: View {
     
     var body: some View {
         VStack {
-            TextField("Homework Entry Text", text: $text)
-            TextField("Lesson", text: $lesson)
-            Toggle("Has Due Date", isOn: $hasDueDate)
+            TextField(String(localized: "HET"), text: $text)
+            TextField(String(localized: "Lesson"), text: $lesson)
+            Toggle(String(localized: "Has Due Date"), isOn: $hasDueDate)
             if hasDueDate {
-                DatePicker(selection: $dueDate, displayedComponents: [.date], label: {Text("Due Date")})
+                DatePicker(selection: $dueDate, displayedComponents: [.date], label: {Text(String(localized: "Due Date"))})
             }
             Spacer()
         }
-        .navigationTitle("Add Item")
+        .navigationTitle(String(localized: "Add Item"))
         .padding()
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {

@@ -27,14 +27,10 @@ struct ContentView: View {
                 List {
                     ForEach(items) { item in
                         HStack {
-                            VStack {
-                                HStack {
-                                    Text(item.lesson ?? "item.lesson")
-                                    Spacer()
-                                }
+                            VStack(alignment: .leading) {
+                                Text(item.lesson ?? "item.lesson")
                                 HStack {
                                     Text("\(item.text ?? "item.text") \(item.dueDate != nil ? "—" : "" ) \(item.dueDate?.formatted(date: .numeric, time: .omitted) ?? "")")
-                                    Spacer()
                                 }
                             }
                             Spacer()
@@ -58,9 +54,8 @@ struct ContentView: View {
                             Image(systemName: "plus")
                         }
                     }
+                }
             }
-            }
-            Text("Select an item")
         }.navigationTitle(Text("Homework"))
     }
 
