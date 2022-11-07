@@ -6,12 +6,20 @@
 hausaufgaben (homework in german) is an app to note down homework. It uses CoreData to store the homework list and will maybe be expanded to use CloudKit.
 
 The app is made of 100% organically produced SwiftUI.
-I am welcome to feature requests and help with the bug `UnsafeRawBufferPointer with negative count` that is thrown once I run the app on the simulator.
+I am welcome to feature requests and community bugfixes. Look at the [Contributing guide](CONTRIBUTING.md) for a list of labels and their purposes.
 
-## TestFlight
-Will be available once Issue libewa/hausaufgaben#1 is fixed and no further issues occur.
-The App will still not be in a full release state then and should not be used for real-world application, unless you have a backup alternative.
+## Downloads
 
+### App Store
+
+Will be available once the TestFlight runs well.
+
+### TestFlight
+Will be available soon.
+The App will still not be in a full release state then and should not be used without backup alternatives.
+
+## Contributing
+Read [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Made using
 
