@@ -14,6 +14,8 @@ struct AddView: View {
     @State var lesson = ""
     @State var hasDueDate = true
     @State var dueDate = Date()
+    @State var difficulty = 0
+    
     
     var body: some View {
         VStack {
@@ -22,6 +24,61 @@ struct AddView: View {
             Toggle(String(localized: "Has Due Date"), isOn: $hasDueDate)
             if hasDueDate {
                 DatePicker(selection: $dueDate, displayedComponents: [.date], label: {Text(String(localized: "Due Date"))})
+            }
+            HStack() {
+                Text("Difficulty Rating")
+                
+                Spacer()
+                
+                Button {
+                    difficulty = 1
+                } label: {
+                    if difficulty < 1 {
+                        Image(systemName: "star")
+                    } else {
+                        Image(systemName: "star.fill")
+                    }
+                }
+                
+                Button {
+                    difficulty = 2
+                } label: {
+                    if difficulty < 2 {
+                        Image(systemName: "star")
+                    } else {
+                        Image(systemName: "star.fill")
+                    }
+                }
+                
+                Button {
+                    difficulty = 3
+                } label: {
+                    if difficulty < 3 {
+                        Image(systemName: "star")
+                    } else {
+                        Image(systemName: "star.fill")
+                    }
+                }
+                
+                Button {
+                    difficulty = 4
+                } label: {
+                    if difficulty < 4 {
+                        Image(systemName: "star")
+                    } else {
+                        Image(systemName: "star.fill")
+                    }
+                }
+                
+                Button {
+                    difficulty = 5
+                } label: {
+                    if difficulty < 5 {
+                        Image(systemName: "star")
+                    } else {
+                        Image(systemName: "star.fill")
+                    }
+                }
             }
             Spacer()
         }
@@ -45,6 +102,7 @@ struct AddView: View {
             newItem.text = text
             newItem.lesson = lesson
             newItem.dueDate = hasDueDate ? dueDate : nil
+            newItem.difficulty = Int16(difficulty)
             
             do {
                 try viewContext.save()

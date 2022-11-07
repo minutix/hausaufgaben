@@ -30,7 +30,33 @@ struct ContentView: View {
                             VStack(alignment: .leading) {
                                 Text(item.lesson ?? "item.lesson")
                                 HStack {
-                                    Text("\(item.text ?? "item.text") \(item.dueDate != nil ? "—" : "" ) \(item.dueDate?.formatted(date: .numeric, time: .omitted) ?? "")")
+                                    Text("\(item.text ?? "item.text") \(item.dueDate != nil ? "—" : "" ) \(item.dueDate?.formatted(date: .numeric, time: .omitted) ?? "") – ")
+                                    // stars
+                                    if item.difficulty < 1 {
+                                        Image(systemName: "star")
+                                    } else {
+                                        Image(systemName: "star.fill")
+                                    }
+                                    if item.difficulty < 2 {
+                                        Image(systemName: "star")
+                                    } else {
+                                        Image(systemName: "star.fill")
+                                    }
+                                    if item.difficulty < 3 {
+                                        Image(systemName: "star")
+                                    } else {
+                                        Image(systemName: "star.fill")
+                                    }
+                                    if item.difficulty < 4 {
+                                        Image(systemName: "star")
+                                    } else {
+                                        Image(systemName: "star.fill")
+                                    }
+                                    if item.difficulty < 5 {
+                                        Image(systemName: "star")
+                                    } else {
+                                        Image(systemName: "star.fill")
+                                    }
                                 }
                             }
                             Spacer()

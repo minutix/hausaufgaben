@@ -18,6 +18,7 @@ struct PersistenceController {
             newItem.lesson = "Deutsch"
             newItem.text = "Buch S. 123 lesen"
             newItem.dueDate = nil
+            newItem.difficulty = 3
             
         }
         do {
