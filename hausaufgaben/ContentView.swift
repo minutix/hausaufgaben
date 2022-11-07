@@ -29,6 +29,7 @@ struct ContentView: View {
                         HStack {
                             VStack(alignment: .leading) {
                                 Text(item.lesson ?? "item.lesson")
+                                    .font(.headline)
                                 HStack {
                                     Text("\(item.text ?? "item.text") \(item.dueDate != nil ? "—" : "" ) \(item.dueDate?.formatted(date: .numeric, time: .omitted) ?? "") – ")
                                     // stars
@@ -58,6 +59,7 @@ struct ContentView: View {
                                         Image(systemName: "star.fill")
                                     }
                                 }
+                                .font(.footnote)
                             }
                             Spacer()
                             Button {
@@ -66,6 +68,7 @@ struct ContentView: View {
                                 Image(systemName: "checkmark.circle\(item.isDone ? ".fill" : "")")
                             }
                         }
+                        .padding()
                     }
                     .onDelete(perform: deleteItems)
                 }
