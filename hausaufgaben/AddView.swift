@@ -19,8 +19,8 @@ struct AddView: View {
     
     var body: some View {
         VStack {
-            TextField(String(localized: "HET"), text: $text)
             TextField(String(localized: "Lesson"), text: $lesson)
+            TextField(String(localized: "HET"), text: $text)
             Toggle(String(localized: "Has Due Date"), isOn: $hasDueDate)
             if hasDueDate {
                 DatePicker(selection: $dueDate, displayedComponents: [.date], label: {Text(String(localized: "Due Date"))})
