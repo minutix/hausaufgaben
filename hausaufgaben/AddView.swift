@@ -10,6 +10,7 @@ import SwiftUI
 struct AddView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Environment(\.managedObjectContext) private var viewContext
+    @State private var alertPresented = false
     @State var text = ""
     @State var lesson = ""
     @State var hasDueDate = true
@@ -87,11 +88,17 @@ struct AddView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    addItem()
-                    presentationMode.wrappedValue.dismiss()
+                    if lesson != "" && text != "" {
+                        addItem()
+                        presentationMode.wrappedValue.dismiss()
+                    } else {
+                        alertPresented = true
+                    }
+                    
                 } label: {
                     Text("Done")
                 }
+                .alert("Text fields cannot be empty", isPresented: $alertPresented, actions: {Button(action: {alertPresented = false}, label: {Text("OK")})})
             }
         }
     }

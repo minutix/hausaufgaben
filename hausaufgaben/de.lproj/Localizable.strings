@@ -20,3 +20,5 @@
 "Lesson" = "Fach";
 
 "Difficulty Rating" = "Schwierigkeit";
+
+"Text fields cannot be empty" = "Die Textfelder können nicht leer sein";

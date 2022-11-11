@@ -30,8 +30,9 @@ struct ContentView: View {
                             VStack(alignment: .leading) {
                                 Text(item.lesson ?? "item.lesson")
                                     .font(.headline)
+                                Text("\(item.text ?? "item.text") \(item.dueDate != nil ? "—" : "" ) \(item.dueDate?.formatted(date: .numeric, time: .omitted) ?? "")")
                                 HStack {
-                                    Text("\(item.text ?? "item.text") \(item.dueDate != nil ? "—" : "" ) \(item.dueDate?.formatted(date: .numeric, time: .omitted) ?? "") – ")
+                                    
                                     // stars
                                     if item.difficulty < 1 {
                                         Image(systemName: "star")
