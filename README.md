@@ -3,10 +3,13 @@
 
 
 
-hausaufgaben (homework in german) is an app to note down homework. It uses CoreData to store the homework list and will maybe be expanded to use CloudKit.
+hausaufgaben (homework in german) is an app to note down homework. It uses CoreData to store the homework list.
 
 The app is made of 100% organically produced SwiftUI.
 I am welcome to feature requests and community bugfixes. Look at the [Contributing guide](CONTRIBUTING.md) for a list of labels and their purposes.
+
+## CloudKit
+I have now decided against CloudKit, because some users may lose their data and someone is definitly gonna sue us for not having a proper privacy policy. Also we would have to make a yearly report of what things we encrypted with what algorithms. It's just not worth the hassle.
 
 ## Downloads
 
@@ -15,8 +18,8 @@ I am welcome to feature requests and community bugfixes. Look at the [Contributi
 Will be available once the TestFlight runs well.
 
 ### TestFlight
-Will be available soon.
-The App will still not be in a full release state then and should not be used without backup alternatives.
+https://testflight.apple.com/join/nopmEm9m
+The App is still not in a full release state and should not be used without backup alternatives.
 
 ## Contributing
 Read [CONTRIBUTING.md](CONTRIBUTING.md)
