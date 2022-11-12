@@ -19,6 +19,7 @@ Will be available once the TestFlight runs well.
 
 ### TestFlight
 https://testflight.apple.com/join/nopmEm9m
+
 The App is still not in a full release state and should not be used without backup alternatives.
 
 ## Contributing
