@@ -14,9 +14,8 @@ struct AddView: View {
     @State var text = ""
     @State var lesson = ""
     @State var hasDueDate = true
-    @State var dueDate = Date()
+    @State var dueDate = Date(timeInterval: 86400, since: Date())
     @State var difficulty = 0
-    
     
     var body: some View {
         VStack {
