@@ -27,6 +27,9 @@ The App is still not in a full release state and should not be used without back
 
 You can read the full license in the [`LICENSE` file](LICENSE.md) or on [creativecommons.org](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
 
+## DISCLAIMER
+As defined under [Section 5](https://github.com/libewa/hausaufgaben/blob/main/LICENSE.md#s5) of the License, THIS SOFWARE IS PROVIDED AS-IS, WITHOUT WARRANTY OF ANY KIND.
+
 ## Contributing
 Read [CONTRIBUTING.md](CONTRIBUTING.md)
 
