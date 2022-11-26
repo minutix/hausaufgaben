@@ -1,7 +1,7 @@
 # Contributers guide to libewa/hausaufgaben
 
 # Branches
-The `main` branch shows the code of the current "stable" version. `beta` is used for building the TestFlight beta. `dev` is where the development happens. That branch is officially unstable and should NEVER! be used in production environments. All branches should stem from `dev` and work on a simulated or real device (not the Assistant Editor).
+Create branches or forks from `main` or other branches or forks they depend on.
 
 ## Step by step guide to PRs
 

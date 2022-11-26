@@ -3,10 +3,13 @@
 
 
 
-hausaufgaben (homework in german) is an app to note down homework. It uses CoreData to store the homework list and will maybe be expanded to use CloudKit.
+hausaufgaben (homework in german) is an app to note down homework. It uses CoreData to store the homework list.
 
 The app is made of 100% organically produced SwiftUI.
 I am welcome to feature requests and community bugfixes. Look at the [Contributing guide](CONTRIBUTING.md) for a list of labels and their purposes.
+
+## CloudKit
+I have now decided against CloudKit, because some users may lose their data and someone is definitly gonna sue us for not having a proper privacy policy. Also we would have to make a yearly report of what things we encrypted with what algorithms. It's just not worth the hassle.
 
 ## Downloads
 
@@ -15,8 +18,17 @@ I am welcome to feature requests and community bugfixes. Look at the [Contributi
 Will be available once the TestFlight runs well.
 
 ### TestFlight
-Will be available soon.
-The App will still not be in a full release state then and should not be used without backup alternatives.
+https://testflight.apple.com/join/nopmEm9m
+
+The App is still not in a full release state and should not be used without backup alternatives.
+
+# License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">libewa/hausaufgaben</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/libewa" property="cc:attributionName" rel="cc:attributionURL">libewa</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+You can read the full license in the [`LICENSE` file](LICENSE.md) or on [creativecommons.org](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
+
+## DISCLAIMER
+As defined under [Section 5](https://github.com/libewa/hausaufgaben/blob/main/LICENSE.md#s5) of the License, THIS SOFWARE IS PROVIDED AS-IS, WITHOUT WARRANTY OF ANY KIND.
 
 ## Contributing
 Read [CONTRIBUTING.md](CONTRIBUTING.md)

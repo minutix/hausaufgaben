@@ -14,9 +14,11 @@
 "HET" = "Inhalt";
 
 /* No comment provided by engineer. */
-"Homework" = "Hausaufgaben";
+"Homework" = "Happen";
 
 /* No comment provided by engineer. */
 "Lesson" = "Fach";
 
 "Difficulty Rating" = "Schwierigkeit";
+
+"Text fields cannot be empty" = "Die Textfelder können nicht leer sein";
