@@ -14,16 +14,8 @@ struct AddView: View {
     @State var text = ""
     @State var lesson = ""
     @State var hasDueDate = true
-    @State var dueDate = Date(timeInterval: 86400, since: Date())
+    @State var dueDate = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
     @State var difficulty = 0
-    init(dueDateIn: Int) {
-        self.dueDate = Date()
-        self.text = ""
-        self.lesson = ""
-        self.hasDueDate = true
-        self.difficulty = 0
-        Calendar.current.date(byAdding: .day, value: dueDateIn, to: self.dueDate)
-    }
     
     var body: some View {
         VStack {

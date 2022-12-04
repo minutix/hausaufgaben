@@ -79,7 +79,7 @@ struct ContentView: View {
                     }
                     ToolbarItem {
                         NavigationLink {
-                            AddView(dueDateIn: 1)
+                            AddView()
                         } label: {
                             Image(systemName: "plus")
                         }
