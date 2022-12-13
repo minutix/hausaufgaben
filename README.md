@@ -19,7 +19,7 @@ I have now decided against CloudKit, because some users may lose their data and 
 
 ### App Store
 
-Will be available once the TestFlight runs well.
+[![Download on the App Store](promo/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg)](https://apple.co/3HuiULK)
 
 ### TestFlight
 https://testflight.apple.com/join/nopmEm9m
