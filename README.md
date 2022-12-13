@@ -1,6 +1,10 @@
 # hausaufgaben
-![A banner displaying the Add view](promo/social-preview.png)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="promo/happen___hausaufgaben-1280x720 2.png">
+  <source media="(prefers-color-scheme: light)" srcset="promo/happen___hausaufgaben-1280x720.png">
+  <img alt="New Launch Alert. Ready, Set, Get!" src="promo/happen___hausaufgaben-1280x720 2.png">
+</picture>
 
 
 hausaufgaben (homework in german) is an app to note down homework. It uses CoreData to store the homework list.
