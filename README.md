@@ -1,6 +1,9 @@
 # hausaufgaben
-![A banner displaying the Add view](promo/social-preview.png)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/libewa/hausaufgaben/blob/2403fe075b51adbe4a5dfe2c45508dc0d2a4c58c/promo/happen___hausaufgaben-1280x720%202.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/libewa/hausaufgaben/blob/2403fe075b51adbe4a5dfe2c45508dc0d2a4c58c/promo/happen___hausaufgaben-1280x720.png">
+  <img alt="New Launch Alert. Ready, Set, Get!" src="https://github.com/libewa/hausaufgaben/blob/2403fe075b51adbe4a5dfe2c45508dc0d2a4c58c/promo/happen___hausaufgaben-1280x720.png
 
 
 hausaufgaben (homework in german) is an app to note down homework. It uses CoreData to store the homework list.
@@ -15,7 +18,7 @@ I have now decided against CloudKit, because some users may lose their data and 
 
 ### App Store
 
-Will be available once the TestFlight runs well.
+[![Download on the App Store](promo/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg)](https://apple.co/3HuiULK)
 
 ### TestFlight
 https://testflight.apple.com/join/nopmEm9m
