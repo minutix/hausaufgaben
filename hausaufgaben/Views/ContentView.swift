@@ -12,7 +12,7 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Homework.lesson, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Homework.dueDate, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Homework>
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
