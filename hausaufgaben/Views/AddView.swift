@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct AddView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Environment(\.managedObjectContext) private var viewContext
@@ -16,6 +17,15 @@ struct AddView: View {
     @State var hasDueDate = true
     @State var dueDate = Calendar.current.date(byAdding: .day, value: 1, to: Date())!
     @State var difficulty = 0
+    private let center = UNUserNotificationCenter.current()
+    private let defaults = UserDefaults()
+    
+    init() {
+        // Load settings
+        let appDefaults = [String:AnyObject]()
+        UserDefaults.standard.register(defaults: appDefaults)
+        NotificationCenter.default.addObserver(self, selector: Selector(("defaultsChanged")), name: UserDefaults.didChangeNotification, object: nil)
+    }
     
     var body: some View {
         VStack {
@@ -88,8 +98,47 @@ struct AddView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
                     if lesson != "" && text != "" {
-                        addItem()
+                        //create a uuid
+                        let uuidString = UUID().uuidString
+                        addItem(uuid: uuidString)
                         presentationMode.wrappedValue.dismiss()
+                        center.getNotificationSettings { settings in
+                            guard (settings.authorizationStatus == .authorized) ||
+                                  (settings.authorizationStatus == .provisional) else { return }
+                            
+                            let content = UNNotificationContent()
+                            content.setValue("Due tomorrow", forKey: "title")
+                            content.setValue("Your exercise \(text) in \(lesson) is due tomorrow and not marked as Done", forKey: "body")
+                            // load set time from UserDefaults
+                            let hour = defaults.integer(forKey: "notificationHour")
+                            let minute = defaults.integer(forKey: "notificationMinute")
+                            
+                            let date = Calendar.current.dateComponents([.day, .month, .year], from: Calendar.current.date(bySettingHour: hour, minute: minute, second: 0, of: Calendar.current.date(byAdding: .day, value: -1, to: dueDate)!)!)
+                            let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: false)
+                            
+                            
+                            // Create the request
+                            
+                            let request = UNNotificationRequest(identifier: uuidString,
+                                        content: content, trigger: trigger)
+
+                            // Schedule the request with the system.
+                            let notificationCenter = UNUserNotificationCenter.current()
+                            notificationCenter.add(request) { (error) in
+                               if error != nil {
+                                  // Handle any errors.
+                                  //TODO: Handle errors
+                               }
+                            }
+                            /*
+                            if settings.alertSetting == .enabled {
+                                // Schedule an alert-only notification.
+                                
+                            } else {
+                                // Schedule a notification with a badge and sound.
+                            }
+                            */
+                        }
                     } else {
                         alertPresented = true
                     }
@@ -102,13 +151,14 @@ struct AddView: View {
         }
     }
     
-    func addItem() {
+    func addItem(uuid: String) {
         withAnimation {
             let newItem = Homework(context: viewContext)
             newItem.text = text
             newItem.lesson = lesson
             newItem.dueDate = hasDueDate ? dueDate : nil
             newItem.difficulty = Int16(difficulty)
+            newItem.id = uuid
             
             do {
                 try viewContext.save()

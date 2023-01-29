@@ -16,6 +16,7 @@
 		15A493052912D8F600A22C72 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A493042912D8F600A22C72 /* Persistence.swift */; };
 		15A493152912E7AE00A22C72 /* hausaufgaben.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15A493122912E5C500A22C72 /* hausaufgaben.xcdatamodeld */; };
 		15BEC7962912F9810055D81E /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEC7952912F9810055D81E /* AddView.swift */; };
+		15C23D5729869EEB004C53D2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 15C23D5629869EEB004C53D2 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		15A493042912D8F600A22C72 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		15A493132912E5C500A22C72 /* homework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = homework.xcdatamodel; sourceTree = "<group>"; };
 		15BEC7952912F9810055D81E /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		15C23D5629869EEB004C53D2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				15A492FB2912D8F500A22C72 /* hausaufgabenApp.swift */,
-				15A492FD2912D8F500A22C72 /* ContentView.swift */,
-				15BEC7952912F9810055D81E /* AddView.swift */,
+				15BC295B29859E3B00B024BA /* Views */,
 				15A493122912E5C500A22C72 /* hausaufgaben.xcdatamodeld */,
+				15C23D5629869EEB004C53D2 /* Settings.bundle */,
 				15A492FF2912D8F600A22C72 /* Assets.xcassets */,
 				15A493042912D8F600A22C72 /* Persistence.swift */,
 				15A493012912D8F600A22C72 /* Preview Content */,
@@ -82,6 +84,15 @@
 				15A493022912D8F600A22C72 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15BC295B29859E3B00B024BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15A492FD2912D8F500A22C72 /* ContentView.swift */,
+				15BEC7952912F9810055D81E /* AddView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 			files = (
 				1519459C2917A53B00B32719 /* Localizable.strings in Resources */,
 				15A493032912D8F600A22C72 /* Preview Assets.xcassets in Resources */,
+				15C23D5729869EEB004C53D2 /* Settings.bundle in Resources */,
 				151945992917A53B00B32719 /* hausaufgaben-InfoPlist.strings in Resources */,
 				15A493002912D8F600A22C72 /* Assets.xcassets in Resources */,
 			);
@@ -317,7 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben/Preview Content\"";
-				DEVELOPMENT_TEAM = 3ZKC6VXD5Z;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Happen;
@@ -352,7 +364,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben/Preview Content\"";
-				DEVELOPMENT_TEAM = 3ZKC6VXD5Z;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Happen;
