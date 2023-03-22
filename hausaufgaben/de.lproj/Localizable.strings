@@ -1,24 +1,25 @@
 /* No comment provided by engineer. */
-"Add Item" = "Neuer Eintrag";
+"add_item" = "Neuer Eintrag";
 
 /* No comment provided by engineer. */
-"Done" = "Fertig";
+"done" = "Fertig";
 
 /* No comment provided by engineer. */
-"Due Date" = "Ablaufdatum";
+"due_date" = "Ablaufdatum";
 
 /* No comment provided by engineer. */
-"Has Due Date" = "Hat Ablaufdatum";
+"toggle_due_date" = "Hat Ablaufdatum";
 
 /* No comment provided by engineer. */
-"HET" = "Inhalt";
+"task" = "Inhalt";
 
 /* No comment provided by engineer. */
-"Homework" = "Happen";
+"nav_title_main" = "Happen";
 
 /* No comment provided by engineer. */
-"Lesson" = "Fach";
+"lesson" = "Fach";
 
-"Difficulty Rating" = "Schwierigkeit";
+"difficulty" = "Schwierigkeit";
 
-"Text fields cannot be empty" = "Die Textfelder können nicht leer sein";
+"err_empty" = "Die Textfelder können nicht leer sein";
+

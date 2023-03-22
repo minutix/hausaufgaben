@@ -29,14 +29,14 @@ struct AddView: View {
     
     var body: some View {
         VStack {
-            TextField(String(localized: "Lesson"), text: $lesson)
-            TextField(String(localized: "HET"), text: $text)
-            Toggle(String(localized: "Has Due Date"), isOn: $hasDueDate)
+            TextField(String(localized: "lesson"), text: $lesson)
+            TextField(String(localized: "task"), text: $text)
+            Toggle(String(localized: "toggle_due_date"), isOn: $hasDueDate)
             if hasDueDate {
                 DatePicker(selection: $dueDate, displayedComponents: [.date], label: {Text(String(localized: "Due Date"))})
             }
             HStack() {
-                Text("Difficulty Rating")
+                Text("difficulty")
                 
                 Spacer()
                 
@@ -92,7 +92,7 @@ struct AddView: View {
             }
             Spacer()
         }
-        .navigationTitle(String(localized: "Add Item"))
+        .navigationTitle(String(localized: "add_item"))
         .padding()
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
@@ -144,9 +144,9 @@ struct AddView: View {
                     }
                     
                 } label: {
-                    Text("Done")
+                    Text("done")
                 }
-                .alert("Text fields cannot be empty", isPresented: $alertPresented, actions: {Button(action: {alertPresented = false}, label: {Text("OK")})})
+                .alert("err_empty", isPresented: $alertPresented, actions: {Button(action: {alertPresented = false}, label: {Text("OK")})})
             }
         }
     }

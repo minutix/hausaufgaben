@@ -1,4 +1,24 @@
 /* No comment provided by engineer. */
-"HET" = "Entry Text";
+"add_item" = "Add Item";
 
-"Homework" = "HappyWork";
+/* No comment provided by engineer. */
+"done" = "Done";
+
+/* No comment provided by engineer. */
+"due_date" = "Due Date";
+
+/* No comment provided by engineer. */
+"toggle_due_date" = "Has Due Date";
+
+/* No comment provided by engineer. */
+"task" = "Task";
+
+/* No comment provided by engineer. */
+"nav_title_main" = "HappyWork";
+
+/* No comment provided by engineer. */
+"lesson" = "Lesson";
+
+"difficulty" = "Difficulty";
+
+"err_empty" = "Text fields may not be empty";
