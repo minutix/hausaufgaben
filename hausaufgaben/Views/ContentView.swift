@@ -21,9 +21,6 @@ struct ContentView: View {
         NavigationView {
             
             VStack {
-                Text("Homework")
-                    .font(.largeTitle)
-                    .bold()
                 List {
                     ForEach(items) { item in
                         HStack {
@@ -73,6 +70,7 @@ struct ContentView: View {
                     }
                     .onDelete(perform: deleteItems)
                 }
+                .navigationTitle("nav_title_main")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         EditButton()
@@ -86,7 +84,7 @@ struct ContentView: View {
                     }
                 }
             }
-        }.navigationTitle(Text("Homework"))
+        }
     }
 
     
