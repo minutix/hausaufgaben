@@ -92,7 +92,7 @@ struct ContentView: View {
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             offsets.map { items[$0] }.forEach(viewContext.delete)
-
+            offsets.map { items[$0] }.forEach(removeNotification)
             do {
                 try viewContext.save()
             } catch {
@@ -102,6 +102,12 @@ struct ContentView: View {
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
+        }
+    }
+    private func removeNotification(_ input: Homework) {
+        if let identifier = input.notificationID?.uuidString {
+            UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: [identifier])
+            UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [identifier])
         }
     }
 }

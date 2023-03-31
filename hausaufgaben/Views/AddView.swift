@@ -99,8 +99,8 @@ struct AddView: View {
                 Button {
                     if lesson != "" && text != "" {
                         //create a uuid
-                        let uuidString = UUID().uuidString
-                        addItem(uuid: uuidString)
+                        let uuid = UUID()
+                        addItem(uuid: uuid)
                         presentationMode.wrappedValue.dismiss()
                         center.getNotificationSettings { settings in
                             guard (settings.authorizationStatus == .authorized) ||
@@ -115,11 +115,10 @@ struct AddView: View {
                             
                             let date = Calendar.current.dateComponents([.day, .month, .year], from: Calendar.current.date(bySettingHour: hour, minute: minute, second: 0, of: Calendar.current.date(byAdding: .day, value: -1, to: dueDate)!)!)
                             let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: false)
-                            
-                            
+                                                        
                             // Create the request
                             
-                            let request = UNNotificationRequest(identifier: uuidString,
+                            let request = UNNotificationRequest(identifier: uuid.uuidString,
                                         content: content, trigger: trigger)
 
                             // Schedule the request with the system.
@@ -138,6 +137,7 @@ struct AddView: View {
                                 // Schedule a notification with a badge and sound.
                             }
                             */
+                            
                         }
                     } else {
                         alertPresented = true
@@ -151,14 +151,14 @@ struct AddView: View {
         }
     }
     
-    func addItem(uuid: String) {
+    func addItem(uuid: UUID) {
         withAnimation {
             let newItem = Homework(context: viewContext)
             newItem.text = text
             newItem.lesson = lesson
             newItem.dueDate = hasDueDate ? dueDate : nil
             newItem.difficulty = Int16(difficulty)
-            newItem.id = uuid
+            newItem.notificationID = uuid
             
             do {
                 try viewContext.save()
