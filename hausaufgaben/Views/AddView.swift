@@ -23,7 +23,7 @@ struct AddView: View {
             TextField(String(localized: "task"), text: $text)
             Toggle(String(localized: "toggle_due_date"), isOn: $hasDueDate)
             if hasDueDate {
-                DatePicker(selection: $dueDate, displayedComponents: [.date], label: {Text(String(localized: "Due Date"))})
+                DatePicker(selection: $dueDate, displayedComponents: [.date], label: {Text("due_date")})
             }
             HStack() {
                 Text("difficulty")
