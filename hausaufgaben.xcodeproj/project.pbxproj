@@ -29,7 +29,6 @@
 		15A492FE2912D8F500A22C72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A492FD2912D8F500A22C72 /* ContentView.swift */; };
 		15A493002912D8F600A22C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A492FF2912D8F600A22C72 /* Assets.xcassets */; };
 		15A493032912D8F600A22C72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A493022912D8F600A22C72 /* Preview Assets.xcassets */; };
-		15A493052912D8F600A22C72 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A493042912D8F600A22C72 /* Persistence.swift */; };
 		15A493152912E7AE00A22C72 /* hausaufgaben.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15A493122912E5C500A22C72 /* hausaufgaben.xcdatamodeld */; };
 		15BEC7962912F9810055D81E /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEC7952912F9810055D81E /* AddView.swift */; };
 		15E2D5F92AAC4BB100469533 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D5F82AAC4BB100469533 /* StarView.swift */; };
@@ -62,7 +61,6 @@
 		15A492FD2912D8F500A22C72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		15A492FF2912D8F600A22C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15A493022912D8F600A22C72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		15A493042912D8F600A22C72 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		15A493132912E5C500A22C72 /* homework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = homework.xcdatamodel; sourceTree = "<group>"; };
 		15BEC7952912F9810055D81E /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		15E2D5F82AAC4BB100469533 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 				152FF53B2AD5A37D00D9D672 /* Views */,
 				15A493122912E5C500A22C72 /* hausaufgaben.xcdatamodeld */,
 				15A492FF2912D8F600A22C72 /* Assets.xcassets */,
-				15A493042912D8F600A22C72 /* Persistence.swift */,
 				15A493012912D8F600A22C72 /* Preview Content */,
 			);
 			path = hausaufgaben;
@@ -251,7 +248,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				15E2D5F92AAC4BB100469533 /* StarView.swift in Sources */,
-				15A493052912D8F600A22C72 /* Persistence.swift in Sources */,
 				15A492FE2912D8F500A22C72 /* ContentView.swift in Sources */,
 				15BEC7962912F9810055D81E /* AddView.swift in Sources */,
 				15A492FC2912D8F500A22C72 /* hausaufgabenApp.swift in Sources */,
