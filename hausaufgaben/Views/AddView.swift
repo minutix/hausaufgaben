@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct AddView: View {
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @Environment(\.managedObjectContext) private var viewContext
+    @Environment(\.modelContext) private var modelContext
+    @Environment(\.dismiss) private var dismiss
+    
     @State private var alertPresented = false
     @State var text = ""
     @State var lesson = ""
@@ -18,106 +19,99 @@ struct AddView: View {
     @State var difficulty = 0
     
     var body: some View {
-        VStack {
-            TextField(String(localized: "lesson"), text: $lesson)
-            TextField(String(localized: "task"), text: $text)
-            Toggle(String(localized: "toggle_due_date"), isOn: $hasDueDate)
-            if hasDueDate {
-                DatePicker(selection: $dueDate, displayedComponents: [.date], label: {Text("due_date")})
-            }
-            HStack() {
-                Text("difficulty")
-                
-                Spacer()
-                
-                Button {
-                    difficulty = 1
-                } label: {
-                    if difficulty < 1 {
-                        Image(systemName: "star")
-                    } else {
-                        Image(systemName: "star.fill")
-                    }
+        NavigationStack {
+            Form {
+                TextField("STRING.ADD_SHEET.LESSON", text: $lesson)
+                TextField("STRING.ADD_SHEET.TASK", text: $text)
+                Toggle(String(localized: "STRING.ADD_SHEET.TOGGLE_DUE_DATE"), isOn: $hasDueDate)
+                if hasDueDate {
+                    DatePicker(selection: $dueDate, displayedComponents: [.date], label: {Text("STRING.ADD_SHEET.DUE_DATE")})
                 }
-                
-                Button {
-                    difficulty = 2
-                } label: {
-                    if difficulty < 2 {
-                        Image(systemName: "star")
-                    } else {
-                        Image(systemName: "star.fill")
-                    }
-                }
-                
-                Button {
-                    difficulty = 3
-                } label: {
-                    if difficulty < 3 {
-                        Image(systemName: "star")
-                    } else {
-                        Image(systemName: "star.fill")
-                    }
-                }
-                
-                Button {
-                    difficulty = 4
-                } label: {
-                    if difficulty < 4 {
-                        Image(systemName: "star")
-                    } else {
-                        Image(systemName: "star.fill")
-                    }
-                }
-                
-                Button {
-                    difficulty = 5
-                } label: {
-                    if difficulty < 5 {
-                        Image(systemName: "star")
-                    } else {
-                        Image(systemName: "star.fill")
-                    }
-                }
-            }
-            Spacer()
-        }
-        .navigationTitle(String(localized: "add_item"))
-        .padding()
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    if lesson != "" && text != "" {
-                        addItem()
-                        presentationMode.wrappedValue.dismiss()
-                    } else {
-                        alertPresented = true
+                HStack() {
+                    Text("STRING.ADD_SHEET.DIFFICULTY")
+                    
+                    Spacer()
+                    
+                    Button {
+                        difficulty = 1
+                    } label: {
+                        if difficulty < 1 {
+                            Image(systemName: "star")
+                        } else {
+                            Image(systemName: "star.fill")
+                        }
                     }
                     
-                } label: {
-                    Text("done")
+                    Button {
+                        difficulty = 2
+                    } label: {
+                        if difficulty < 2 {
+                            Image(systemName: "star")
+                        } else {
+                            Image(systemName: "star.fill")
+                        }
+                    }
+                    
+                    Button {
+                        difficulty = 3
+                    } label: {
+                        if difficulty < 3 {
+                            Image(systemName: "star")
+                        } else {
+                            Image(systemName: "star.fill")
+                        }
+                    }
+                    
+                    Button {
+                        difficulty = 4
+                    } label: {
+                        if difficulty < 4 {
+                            Image(systemName: "star")
+                        } else {
+                            Image(systemName: "star.fill")
+                        }
+                    }
+                    
+                    Button {
+                        difficulty = 5
+                    } label: {
+                        if difficulty < 5 {
+                            Image(systemName: "star")
+                        } else {
+                            Image(systemName: "star.fill")
+                        }
+                    }
                 }
-                .alert("err_empty", isPresented: $alertPresented, actions: {Button(action: {alertPresented = false}, label: {Text("OK")})})
             }
+            .navigationTitle(String(localized: "STRING.ADD_SHEET.TITLE"))
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("BUTTON.ADD_SHEET.CANCEL", role: .cancel) {
+                        dismiss()
+                    }
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button {
+                        if lesson != "" && text != "" {
+                            addItem()
+                            dismiss()
+                        } else {
+                            alertPresented = true
+                        }
+                        
+                    } label: {
+                        Text("BUTTON.ADD_SHEET.DONE")
+                    }
+                        .alert("ERROR.ADD_SHEET.EMPTY", isPresented: $alertPresented, actions: {Button(action: {alertPresented = false}, label: {Text("OK")})})
+                }
+        }
         }
     }
     
-    func addItem() {
+    private func addItem() {
         withAnimation {
-            let newItem = Homework(context: viewContext)
-            newItem.text = text
-            newItem.lesson = lesson
-            newItem.dueDate = hasDueDate ? dueDate : nil
-            newItem.difficulty = Int16(difficulty)
-            
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+            let newItem = Homework(difficulty: difficulty, dueDate: dueDate, lesson: lesson, text: text)
+            modelContext.insert(newItem)
         }
     }
 }
