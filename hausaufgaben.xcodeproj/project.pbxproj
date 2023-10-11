@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		151945992917A53B00B32719 /* hausaufgaben-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 151945972917A53B00B32719 /* hausaufgaben-InfoPlist.strings */; };
-		1519459C2917A53B00B32719 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1519459A2917A53B00B32719 /* Localizable.strings */; };
 		15230D5129CB7515006A568E /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 15230D4129CB7513006A568E /* LICENSE.md */; };
 		15230D5229CB7515006A568E /* addView.png in Resources */ = {isa = PBXBuildFile; fileRef = 15230D4329CB7513006A568E /* addView.png */; };
 		15230D5329CB7515006A568E /* listView.pxd in Resources */ = {isa = PBXBuildFile; fileRef = 15230D4429CB7513006A568E /* listView.pxd */; };
@@ -29,16 +27,15 @@
 		15A492FE2912D8F500A22C72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A492FD2912D8F500A22C72 /* ContentView.swift */; };
 		15A493002912D8F600A22C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A492FF2912D8F600A22C72 /* Assets.xcassets */; };
 		15A493032912D8F600A22C72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A493022912D8F600A22C72 /* Preview Assets.xcassets */; };
-		15A493152912E7AE00A22C72 /* hausaufgaben.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15A493122912E5C500A22C72 /* hausaufgaben.xcdatamodeld */; };
 		15BEC7962912F9810055D81E /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEC7952912F9810055D81E /* AddView.swift */; };
+		15C768E72AD5AB5900CC440C /* Homework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C768E62AD5AB5800CC440C /* Homework.swift */; };
+		15C768E92AD6F1F900CC440C /* HomeworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C768E82AD6F1F900CC440C /* HomeworkListView.swift */; };
+		15C768EB2AD6F3E100CC440C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 15C768EA2AD6F3E100CC440C /* Localizable.xcstrings */; };
+		15C768ED2AD6F3E100CC440C /* hausaufgaben-InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 15C768EC2AD6F3E100CC440C /* hausaufgaben-InfoPlist.xcstrings */; };
 		15E2D5F92AAC4BB100469533 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D5F82AAC4BB100469533 /* StarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		151945982917A53B00B32719 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/hausaufgaben-InfoPlist.strings"; sourceTree = "<group>"; };
-		1519459B2917A53B00B32719 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1519459D2917A57000B32719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/hausaufgaben-InfoPlist.strings"; sourceTree = "<group>"; };
-		1519459E2917A57000B32719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		15230D4129CB7513006A568E /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		15230D4329CB7513006A568E /* addView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addView.png; sourceTree = "<group>"; };
 		15230D4429CB7513006A568E /* listView.pxd */ = {isa = PBXFileReference; lastKnownFileType = file; path = listView.pxd; sourceTree = "<group>"; };
@@ -61,8 +58,11 @@
 		15A492FD2912D8F500A22C72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		15A492FF2912D8F600A22C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15A493022912D8F600A22C72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		15A493132912E5C500A22C72 /* homework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = homework.xcdatamodel; sourceTree = "<group>"; };
 		15BEC7952912F9810055D81E /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		15C768E62AD5AB5800CC440C /* Homework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homework.swift; sourceTree = "<group>"; };
+		15C768E82AD6F1F900CC440C /* HomeworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkListView.swift; sourceTree = "<group>"; };
+		15C768EA2AD6F3E100CC440C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = Localizable.xcstrings; path = hausaufgaben/Localizable.xcstrings; sourceTree = "<group>"; };
+		15C768EC2AD6F3E100CC440C /* hausaufgaben-InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = "hausaufgaben-InfoPlist.xcstrings"; path = "hausaufgaben/hausaufgaben-InfoPlist.xcstrings"; sourceTree = "<group>"; };
 		15E2D5F82AAC4BB100469533 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +113,7 @@
 			children = (
 				15BEC7952912F9810055D81E /* AddView.swift */,
 				15A492FD2912D8F500A22C72 /* ContentView.swift */,
+				15C768E82AD6F1F900CC440C /* HomeworkListView.swift */,
 				15E2D5F82AAC4BB100469533 /* StarView.swift */,
 			);
 			path = Views;
@@ -122,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				15230D4029CB74E9006A568E /* GitHub */,
-				1519459A2917A53B00B32719 /* Localizable.strings */,
-				151945972917A53B00B32719 /* hausaufgaben-InfoPlist.strings */,
+				15C768EA2AD6F3E100CC440C /* Localizable.xcstrings */,
+				15C768EC2AD6F3E100CC440C /* hausaufgaben-InfoPlist.xcstrings */,
 				15A492FA2912D8F500A22C72 /* hausaufgaben */,
 				15A492F92912D8F500A22C72 /* Products */,
 			);
@@ -141,9 +142,9 @@
 			isa = PBXGroup;
 			children = (
 				15761F7629D6BA520073799E /* Info.plist */,
+				15C768E62AD5AB5800CC440C /* Homework.swift */,
 				15A492FB2912D8F500A22C72 /* hausaufgabenApp.swift */,
 				152FF53B2AD5A37D00D9D672 /* Views */,
-				15A493122912E5C500A22C72 /* hausaufgaben.xcdatamodeld */,
 				15A492FF2912D8F600A22C72 /* Assets.xcassets */,
 				15A493012912D8F600A22C72 /* Preview Content */,
 			);
@@ -217,19 +218,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C768ED2AD6F3E100CC440C /* hausaufgaben-InfoPlist.xcstrings in Resources */,
 				15230D6129CB76C8006A568E /* .gitignore in Resources */,
 				15230D5429CB7515006A568E /* happen___hausaufgaben-1200x628.png in Resources */,
 				15230D5829CB7515006A568E /* happen___hausaufgaben-1280x720 2.png in Resources */,
 				15230D5129CB7515006A568E /* LICENSE.md in Resources */,
 				15230D5929CB7515006A568E /* Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg in Resources */,
-				1519459C2917A53B00B32719 /* Localizable.strings in Resources */,
+				15C768EB2AD6F3E100CC440C /* Localizable.xcstrings in Resources */,
 				15230D5529CB7515006A568E /* social-preview.png in Resources */,
 				15230D5E29CB7515006A568E /* README.md in Resources */,
 				15230D5229CB7515006A568E /* addView.png in Resources */,
 				15230D5C29CB7515006A568E /* PRIVACY.md in Resources */,
 				15A493032912D8F600A22C72 /* Preview Assets.xcassets in Resources */,
 				15230D5F29CB7515006A568E /* SECURITY.md in Resources */,
-				151945992917A53B00B32719 /* hausaufgaben-InfoPlist.strings in Resources */,
 				15230D5629CB7515006A568E /* happen___hausaufgaben-1280x720.png in Resources */,
 				15230D5D29CB7515006A568E /* CONTRIBUTING.md in Resources */,
 				15A493002912D8F600A22C72 /* Assets.xcassets in Resources */,
@@ -249,36 +250,14 @@
 			files = (
 				15E2D5F92AAC4BB100469533 /* StarView.swift in Sources */,
 				15A492FE2912D8F500A22C72 /* ContentView.swift in Sources */,
+				15C768E92AD6F1F900CC440C /* HomeworkListView.swift in Sources */,
 				15BEC7962912F9810055D81E /* AddView.swift in Sources */,
 				15A492FC2912D8F500A22C72 /* hausaufgabenApp.swift in Sources */,
-				15A493152912E7AE00A22C72 /* hausaufgaben.xcdatamodeld in Sources */,
+				15C768E72AD5AB5900CC440C /* Homework.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		151945972917A53B00B32719 /* hausaufgaben-InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				151945982917A53B00B32719 /* de */,
-				1519459D2917A57000B32719 /* en */,
-			);
-			name = "hausaufgaben-InfoPlist.strings";
-			path = hausaufgaben;
-			sourceTree = "<group>";
-		};
-		1519459A2917A53B00B32719 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1519459B2917A53B00B32719 /* de */,
-				1519459E2917A57000B32719 /* en */,
-			);
-			name = Localizable.strings;
-			path = hausaufgaben;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		15A493092912D8F600A22C72 /* Debug */ = {
@@ -334,7 +313,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -392,7 +372,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -408,7 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben/Preview Content\"";
@@ -424,7 +405,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,7 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.miwarn.hausaufgaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Linus;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = HausaufgabenApp;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -449,7 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben/Preview Content\"";
@@ -465,7 +446,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.miwarn.hausaufgaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Linus;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = HausaufgabenApp;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -506,19 +487,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		15A493122912E5C500A22C72 /* hausaufgaben.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				15A493132912E5C500A22C72 /* homework.xcdatamodel */,
-			);
-			currentVersion = 15A493132912E5C500A22C72 /* homework.xcdatamodel */;
-			path = hausaufgaben.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 15A492F02912D8F500A22C72 /* Project object */;
 }
