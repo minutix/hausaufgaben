@@ -82,7 +82,6 @@ struct AddView: View {
                         }
                     }
                 }
-                Spacer()
             }
             .navigationTitle(String(localized: "STRING.ADD_SHEET.TITLE"))
             .toolbar {
