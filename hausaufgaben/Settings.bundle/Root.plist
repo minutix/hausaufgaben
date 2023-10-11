@@ -7,6 +7,12 @@
 	<key>PreferenceSpecifiers</key>
 	<array>
 		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Notifications</string>
+		</dict>
+		<dict>
 			<key>Titles</key>
 			<array>
 				<string>0</string>
