@@ -17,6 +17,16 @@
         }
       }
     },
+    "%lld" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      }
+    },
     "BUTTON.ADD_SHEET.CANCEL" : {
       "localizations" : {
         "de" : {
@@ -49,6 +59,70 @@
         }
       }
     },
+    "BUTTON.ADD_SHEET.ERROR.EMPTY.OK" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "BUTTON.WATCH.MARK_DONE" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erledigt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mark as Done"
+          }
+        }
+      }
+    },
+    "BUTTON.WATCH.MARK_UNDONE" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nicht erledigt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mark as Undone"
+          }
+        }
+      }
+    },
+    "BUTTON.WATCH.REMOVE_ENTRY" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eintrag entfernen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove entry"
+          }
+        }
+      }
+    },
     "ERROR.ADD_SHEET.EMPTY" : {
       "localizations" : {
         "de" : {
@@ -65,17 +139,7 @@
         }
       }
     },
-    "OK" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OK"
-          }
-        }
-      }
-    },
-    "STRING.ADD_SHEET.DIFFICULTY" : {
+    "LABEL.ADD_SHEET.DIFFICULTY" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -91,7 +155,7 @@
         }
       }
     },
-    "STRING.ADD_SHEET.DUE_DATE" : {
+    "LABEL.ADD_SHEET.DUE_DATE" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -107,7 +171,7 @@
         }
       }
     },
-    "STRING.ADD_SHEET.LESSON" : {
+    "LABEL.ADD_SHEET.LESSON" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -123,7 +187,7 @@
         }
       }
     },
-    "STRING.ADD_SHEET.TASK" : {
+    "LABEL.ADD_SHEET.TASK" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -135,6 +199,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Task"
+          }
+        }
+      }
+    },
+    "LABEL.ADD_SHEET.TOGGLE_DUE_DATE" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hat Abgabedatum"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Has Due Date"
           }
         }
       }
@@ -151,22 +231,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Add Item"
-          }
-        }
-      }
-    },
-    "STRING.ADD_SHEET.TOGGLE_DUE_DATE" : {
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hat Abgabedatum"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Has Due Date"
           }
         }
       }

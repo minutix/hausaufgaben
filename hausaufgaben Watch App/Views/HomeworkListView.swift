@@ -1,8 +1,8 @@
 //
 //  HomeworkListView.swift
-//  hausaufgaben
+//  hausaufgaben Watch App
 //
-//  Created by Linus Warnatz on 11.10.23.
+//  Created by Linus Warnatz on 12.10.23.
 //
 
 import SwiftUI
@@ -14,36 +14,23 @@ struct HomeworkListView: View {
     @Query(sort: \Homework.dueDate, order: .forward)
     var items: [Homework]
     
-    private func deleteItems(_ indexSet: IndexSet) {
-        for index in indexSet {
-            let item = items[index]
-            modelContext.delete(item)
-        }
-    }
-    
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(items) { item in
-                    Button {
-                        items[items.firstIndex(of: item)!].isDone.toggle()
+                    NavigationLink {
+                        ItemDetailView(item: item)
                     } label: {
                         ListItemView(item: item)
-                            .padding()
                     }
-                    .foregroundStyle(.primary)
                 }
-                .onDelete(perform: deleteItems)
             }
             .navigationTitle("STRING.LIST_VIEW.TITLE")
             .sheet(isPresented: $editorPresented, content: {
                 AddView()
             })
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
+                ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         editorPresented = true
                     } label: {
@@ -54,7 +41,6 @@ struct HomeworkListView: View {
         }
     }
 }
-
 #Preview {
     HomeworkListView()
 }

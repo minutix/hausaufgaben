@@ -1,8 +1,8 @@
 //
 //  AddView.swift
-//  hausaufgaben
+//  hausaufgaben Watch App
 //
-//  Created by Linus Warnatz on 02.11.22.
+//  Created by Linus Warnatz on 12.10.23.
 //
 
 import SwiftUI
@@ -27,63 +27,11 @@ struct AddView: View {
                 if hasDueDate {
                     DatePicker(selection: $dueDate, displayedComponents: [.date], label: {Text("LABEL.ADD_SHEET.DUE_DATE")})
                 }
-                HStack() {
+                VStack {
                     Text("LABEL.ADD_SHEET.DIFFICULTY")
-                    
-                    Spacer()
-                    
-                    Button {
-                        difficulty = 1
-                    } label: {
-                        if difficulty < 1 {
-                            Image(systemName: "star")
-                        } else {
-                            Image(systemName: "star.fill")
-                        }
-                    }
-                    
-                    Button {
-                        difficulty = 2
-                    } label: {
-                        if difficulty < 2 {
-                            Image(systemName: "star")
-                        } else {
-                            Image(systemName: "star.fill")
-                        }
-                    }
-                    
-                    Button {
-                        difficulty = 3
-                    } label: {
-                        if difficulty < 3 {
-                            Image(systemName: "star")
-                        } else {
-                            Image(systemName: "star.fill")
-                        }
-                    }
-                    
-                    Button {
-                        difficulty = 4
-                    } label: {
-                        if difficulty < 4 {
-                            Image(systemName: "star")
-                        } else {
-                            Image(systemName: "star.fill")
-                        }
-                    }
-                    
-                    Button {
-                        difficulty = 5
-                    } label: {
-                        if difficulty < 5 {
-                            Image(systemName: "star")
-                        } else {
-                            Image(systemName: "star.fill")
-                        }
-                    }
+                    Stepper("\(difficulty)", value: $difficulty, in: 1...5)
                 }
             }
-            .navigationTitle(String(localized: "STRING.ADD_SHEET.TITLE"))
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("BUTTON.ADD_SHEET.CANCEL", role: .cancel) {
@@ -92,7 +40,7 @@ struct AddView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button {
-                        if lesson != "" && text != "" {
+                        if lesson != "" || text != "" {
                             addItem()
                             dismiss()
                         } else {
