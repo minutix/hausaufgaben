@@ -11,9 +11,6 @@ hausaufgaben (homework in german) is an app to note down homework. It uses CoreD
 The app is made of 100% organically produced SwiftUI.
 I am welcome to feature requests and community bugfixes. Look at the [Contributing guide](CONTRIBUTING.md) for a list of labels and their purposes.
 
-## CloudKit
-I have now decided against CloudKit, because some users may lose their data and someone is definitly gonna sue us for not having a proper privacy policy. Also we would have to make a yearly report of what things we encrypted with what algorithms. It's just not worth the hassle.
-
 ## Downloads
 
 ### App Store
