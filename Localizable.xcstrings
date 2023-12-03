@@ -75,7 +75,7 @@
         }
       }
     },
-    "BUTTON.WATCH.MARK_DONE" : {
+    "BUTTON.MARK_DONE" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -91,7 +91,7 @@
         }
       }
     },
-    "BUTTON.WATCH.MARK_UNDONE" : {
+    "BUTTON.MARK_UNDONE" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -107,7 +107,7 @@
         }
       }
     },
-    "BUTTON.WATCH.REMOVE_ENTRY" : {
+    "BUTTON.REMOVE_ENTRY" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -222,15 +222,39 @@
     "STRING.ADD_SHEET.TITLE" : {
       "localizations" : {
         "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Neuer Eintrag"
+          "variations" : {
+            "device" : {
+              "applewatch" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : ""
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Neuer Eintrag"
+                }
+              }
+            }
           }
         },
         "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add Item"
+          "variations" : {
+            "device" : {
+              "applewatch" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : ""
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Add Item"
+                }
+              }
+            }
           }
         }
       }
