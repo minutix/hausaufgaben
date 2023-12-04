@@ -7,18 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		150159A52AD83F8C00DEA26E /* hausaufgabenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159A42AD83F8C00DEA26E /* hausaufgabenApp.swift */; };
-		150159A72AD83F8C00DEA26E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159A62AD83F8C00DEA26E /* ContentView.swift */; };
-		150159A92AD83F8D00DEA26E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150159A82AD83F8D00DEA26E /* Assets.xcassets */; };
-		150159AC2AD83F8D00DEA26E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150159AB2AD83F8D00DEA26E /* Preview Assets.xcassets */; };
-		150159B02AD83FEF00DEA26E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 15C768EA2AD6F3E100CC440C /* Localizable.xcstrings */; };
-		150159B52AD8402D00DEA26E /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D5F82AAC4BB100469533 /* StarView.swift */; };
-		150159B72AD8405200DEA26E /* HomeworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159B62AD8405200DEA26E /* HomeworkListView.swift */; };
-		150159BA2AD840E100DEA26E /* Homework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C768E62AD5AB5800CC440C /* Homework.swift */; };
 		150159BC2AD8412B00DEA26E /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159BB2AD8412B00DEA26E /* ListItemView.swift */; };
-		150159BE2AD841BC00DEA26E /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159BD2AD841BC00DEA26E /* ListItemView.swift */; };
-		150159C02AD8446500DEA26E /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159BF2AD8446500DEA26E /* ItemDetailView.swift */; };
-		150159C22AD84E6F00DEA26E /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159C12AD84E6F00DEA26E /* AddView.swift */; };
 		15230D5129CB7515006A568E /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 15230D4129CB7513006A568E /* LICENSE.md */; };
 		15230D5229CB7515006A568E /* addView.png in Resources */ = {isa = PBXBuildFile; fileRef = 15230D4329CB7513006A568E /* addView.png */; };
 		15230D5329CB7515006A568E /* listView.pxd in Resources */ = {isa = PBXBuildFile; fileRef = 15230D4429CB7513006A568E /* listView.pxd */; };
@@ -35,6 +24,17 @@
 		15230D5E29CB7515006A568E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 15230D4F29CB7514006A568E /* README.md */; };
 		15230D5F29CB7515006A568E /* SECURITY.md in Resources */ = {isa = PBXBuildFile; fileRef = 15230D5029CB7514006A568E /* SECURITY.md */; };
 		15230D6129CB76C8006A568E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 15230D6029CB76C8006A568E /* .gitignore */; };
+		153D21EE2B1E55EB005B17E1 /* hausaufgaben_watchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153D21ED2B1E55EB005B17E1 /* hausaufgaben_watchApp.swift */; };
+		153D21F02B1E55EB005B17E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153D21EF2B1E55EB005B17E1 /* ContentView.swift */; };
+		153D21F52B1E55ED005B17E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153D21F42B1E55ED005B17E1 /* Preview Assets.xcassets */; };
+		153D21F82B1E55ED005B17E1 /* hausaufgaben-watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 153D21EB2B1E55EB005B17E1 /* hausaufgaben-watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		153D21FD2B1E565B005B17E1 /* HomeworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159B62AD8405200DEA26E /* HomeworkListView.swift */; };
+		153D21FE2B1E565B005B17E1 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159BD2AD841BC00DEA26E /* ListItemView.swift */; };
+		153D21FF2B1E565B005B17E1 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159BF2AD8446500DEA26E /* ItemDetailView.swift */; };
+		153D22002B1E56AE005B17E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150159A82AD83F8D00DEA26E /* Assets.xcassets */; };
+		153D22012B1E56B9005B17E1 /* Homework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C768E62AD5AB5800CC440C /* Homework.swift */; };
+		153D22022B1E56BC005B17E1 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159C12AD84E6F00DEA26E /* AddView.swift */; };
+		153D22032B1E56BF005B17E1 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D5F82AAC4BB100469533 /* StarView.swift */; };
 		15653BE92ADA750800216640 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159C12AD84E6F00DEA26E /* AddView.swift */; };
 		15A492FC2912D8F500A22C72 /* hausaufgabenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A492FB2912D8F500A22C72 /* hausaufgabenApp.swift */; };
 		15A492FE2912D8F500A22C72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A492FD2912D8F500A22C72 /* ContentView.swift */; };
@@ -46,6 +46,16 @@
 		15E2D5F92AAC4BB100469533 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D5F82AAC4BB100469533 /* StarView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		153D21F62B1E55ED005B17E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15A492F02912D8F500A22C72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 153D21EA2B1E55EB005B17E1;
+			remoteInfo = "hausaufgaben-watch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		1501599A2AD83F6000DEA26E /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -53,6 +63,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
+				153D21F82B1E55ED005B17E1 /* hausaufgaben-watch Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,11 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		150159A22AD83F8C00DEA26E /* HappyWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		150159A42AD83F8C00DEA26E /* hausaufgabenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hausaufgabenApp.swift; sourceTree = "<group>"; };
-		150159A62AD83F8C00DEA26E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		150159A82AD83F8D00DEA26E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		150159AB2AD83F8D00DEA26E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		150159A82AD83F8D00DEA26E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../hausaufgaben Watch App/Assets.xcassets"; sourceTree = "<group>"; };
 		150159B62AD8405200DEA26E /* HomeworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkListView.swift; sourceTree = "<group>"; };
 		150159BB2AD8412B00DEA26E /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		150159BD2AD841BC00DEA26E /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
@@ -86,6 +93,10 @@
 		15230D4F29CB7514006A568E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		15230D5029CB7514006A568E /* SECURITY.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = SECURITY.md; sourceTree = "<group>"; };
 		15230D6029CB76C8006A568E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		153D21EB2B1E55EB005B17E1 /* hausaufgaben-watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hausaufgaben-watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		153D21ED2B1E55EB005B17E1 /* hausaufgaben_watchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hausaufgaben_watchApp.swift; sourceTree = "<group>"; };
+		153D21EF2B1E55EB005B17E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		153D21F42B1E55ED005B17E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15761F7629D6BA520073799E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		15A492F82912D8F500A22C72 /* hausaufgaben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hausaufgaben.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A492FB2912D8F500A22C72 /* hausaufgabenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hausaufgabenApp.swift; sourceTree = "<group>"; };
@@ -99,7 +110,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1501599F2AD83F8C00DEA26E /* Frameworks */ = {
+		153D21E82B1E55EB005B17E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -116,25 +127,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		150159A32AD83F8C00DEA26E /* hausaufgaben Watch App */ = {
-			isa = PBXGroup;
-			children = (
-				150159A42AD83F8C00DEA26E /* hausaufgabenApp.swift */,
-				150159B82AD8405A00DEA26E /* Views */,
-				150159A82AD83F8D00DEA26E /* Assets.xcassets */,
-				150159AA2AD83F8D00DEA26E /* Preview Content */,
-			);
-			path = "hausaufgaben Watch App";
-			sourceTree = "<group>";
-		};
-		150159AA2AD83F8D00DEA26E /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				150159AB2AD83F8D00DEA26E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		150159B42AD8401A00DEA26E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,17 +134,6 @@
 				150159B92AD840CD00DEA26E /* Views */,
 			);
 			path = Shared;
-			sourceTree = "<group>";
-		};
-		150159B82AD8405A00DEA26E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				150159A62AD83F8C00DEA26E /* ContentView.swift */,
-				150159B62AD8405200DEA26E /* HomeworkListView.swift */,
-				150159BD2AD841BC00DEA26E /* ListItemView.swift */,
-				150159BF2AD8446500DEA26E /* ItemDetailView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		150159B92AD840CD00DEA26E /* Views */ = {
@@ -205,6 +186,36 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		153D21EC2B1E55EB005B17E1 /* hausaufgaben-watch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				153D21ED2B1E55EB005B17E1 /* hausaufgaben_watchApp.swift */,
+				153D21FC2B1E564E005B17E1 /* Views */,
+				150159A82AD83F8D00DEA26E /* Assets.xcassets */,
+				153D21F32B1E55ED005B17E1 /* Preview Content */,
+			);
+			path = "hausaufgaben-watch Watch App";
+			sourceTree = "<group>";
+		};
+		153D21F32B1E55ED005B17E1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				153D21F42B1E55ED005B17E1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		153D21FC2B1E564E005B17E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				153D21EF2B1E55EB005B17E1 /* ContentView.swift */,
+				150159B62AD8405200DEA26E /* HomeworkListView.swift */,
+				150159BD2AD841BC00DEA26E /* ListItemView.swift */,
+				150159BF2AD8446500DEA26E /* ItemDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		15A492EF2912D8F500A22C72 = {
 			isa = PBXGroup;
 			children = (
@@ -212,7 +223,7 @@
 				150159B42AD8401A00DEA26E /* Shared */,
 				15230D4029CB74E9006A568E /* GitHub */,
 				15A492FA2912D8F500A22C72 /* hausaufgaben */,
-				150159A32AD83F8C00DEA26E /* hausaufgaben Watch App */,
+				153D21EC2B1E55EB005B17E1 /* hausaufgaben-watch Watch App */,
 				15A492F92912D8F500A22C72 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -221,7 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				15A492F82912D8F500A22C72 /* hausaufgaben.app */,
-				150159A22AD83F8C00DEA26E /* HappyWork.app */,
+				153D21EB2B1E55EB005B17E1 /* hausaufgaben-watch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,21 +260,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		150159A12AD83F8C00DEA26E /* hausaufgaben Watch App */ = {
+		153D21EA2B1E55EB005B17E1 /* hausaufgaben-watch Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 150159AD2AD83F8D00DEA26E /* Build configuration list for PBXNativeTarget "hausaufgaben Watch App" */;
+			buildConfigurationList = 153D21FB2B1E55ED005B17E1 /* Build configuration list for PBXNativeTarget "hausaufgaben-watch Watch App" */;
 			buildPhases = (
-				1501599E2AD83F8C00DEA26E /* Sources */,
-				1501599F2AD83F8C00DEA26E /* Frameworks */,
-				150159A02AD83F8C00DEA26E /* Resources */,
+				153D21E72B1E55EB005B17E1 /* Sources */,
+				153D21E82B1E55EB005B17E1 /* Frameworks */,
+				153D21E92B1E55EB005B17E1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "hausaufgaben Watch App";
-			productName = "hausaufgaben Watch App";
-			productReference = 150159A22AD83F8C00DEA26E /* HappyWork.app */;
+			name = "hausaufgaben-watch Watch App";
+			productName = "hausaufgaben-watch Watch App";
+			productReference = 153D21EB2B1E55EB005B17E1 /* hausaufgaben-watch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		15A492F72912D8F500A22C72 /* hausaufgaben */ = {
@@ -278,6 +289,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				153D21F72B1E55ED005B17E1 /* PBXTargetDependency */,
 			);
 			name = hausaufgaben;
 			productName = hausaufgaben;
@@ -294,8 +306,8 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					150159A12AD83F8C00DEA26E = {
-						CreatedOnToolsVersion = 15.0;
+					153D21EA2B1E55EB005B17E1 = {
+						CreatedOnToolsVersion = 15.0.1;
 					};
 					15A492F72912D8F500A22C72 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -317,19 +329,18 @@
 			projectRoot = "";
 			targets = (
 				15A492F72912D8F500A22C72 /* hausaufgaben */,
-				150159A12AD83F8C00DEA26E /* hausaufgaben Watch App */,
+				153D21EA2B1E55EB005B17E1 /* hausaufgaben-watch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		150159A02AD83F8C00DEA26E /* Resources */ = {
+		153D21E92B1E55EB005B17E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				150159AC2AD83F8D00DEA26E /* Preview Assets.xcassets in Resources */,
-				150159A92AD83F8D00DEA26E /* Assets.xcassets in Resources */,
-				150159B02AD83FEF00DEA26E /* Localizable.xcstrings in Resources */,
+				153D22002B1E56AE005B17E1 /* Assets.xcassets in Resources */,
+				153D21F52B1E55ED005B17E1 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,18 +373,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1501599E2AD83F8C00DEA26E /* Sources */ = {
+		153D21E72B1E55EB005B17E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				150159B72AD8405200DEA26E /* HomeworkListView.swift in Sources */,
-				150159BE2AD841BC00DEA26E /* ListItemView.swift in Sources */,
-				150159A72AD83F8C00DEA26E /* ContentView.swift in Sources */,
-				150159A52AD83F8C00DEA26E /* hausaufgabenApp.swift in Sources */,
-				150159C22AD84E6F00DEA26E /* AddView.swift in Sources */,
-				150159C02AD8446500DEA26E /* ItemDetailView.swift in Sources */,
-				150159B52AD8402D00DEA26E /* StarView.swift in Sources */,
-				150159BA2AD840E100DEA26E /* Homework.swift in Sources */,
+				153D22022B1E56BC005B17E1 /* AddView.swift in Sources */,
+				153D21FF2B1E565B005B17E1 /* ItemDetailView.swift in Sources */,
+				153D21F02B1E55EB005B17E1 /* ContentView.swift in Sources */,
+				153D21EE2B1E55EB005B17E1 /* hausaufgaben_watchApp.swift in Sources */,
+				153D21FD2B1E565B005B17E1 /* HomeworkListView.swift in Sources */,
+				153D21FE2B1E565B005B17E1 /* ListItemView.swift in Sources */,
+				153D22032B1E56BF005B17E1 /* StarView.swift in Sources */,
+				153D22012B1E56B9005B17E1 /* Homework.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,32 +404,39 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		153D21F72B1E55ED005B17E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 153D21EA2B1E55EB005B17E1 /* hausaufgaben-watch Watch App */;
+			targetProxy = 153D21F62B1E55ED005B17E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		150159AE2AD83F8D00DEA26E /* Debug */ = {
+		153D21F92B1E55ED005B17E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben-watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = 3ZKC6VXD5Z;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "hausaufgaben-watch";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = io.github.miwarn.hausaufgaben;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .hausaufgaben.watchkit;
-				PRODUCT_NAME = HappyWork;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.miwarn.hausaufgaben.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = HausaufgabenWatchKitApp;
 				SDKROOT = watchos;
@@ -431,31 +449,30 @@
 			};
 			name = Debug;
 		};
-		150159AF2AD83F8D00DEA26E /* Release */ = {
+		153D21FA2B1E55ED005B17E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben-watch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=watchos*]" = 3ZKC6VXD5Z;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "hausaufgaben-watch";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = io.github.miwarn.hausaufgaben;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .hausaufgaben.watchkit;
-				PRODUCT_NAME = HappyWork;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.miwarn.hausaufgaben.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = HausaufgabenWatchKitApp;
 				SDKROOT = watchos;
@@ -599,7 +616,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3ZKC6VXD5Z;
@@ -641,7 +658,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3ZKC6VXD5Z;
@@ -677,11 +694,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		150159AD2AD83F8D00DEA26E /* Build configuration list for PBXNativeTarget "hausaufgaben Watch App" */ = {
+		153D21FB2B1E55ED005B17E1 /* Build configuration list for PBXNativeTarget "hausaufgaben-watch Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				150159AE2AD83F8D00DEA26E /* Debug */,
-				150159AF2AD83F8D00DEA26E /* Release */,
+				153D21F92B1E55ED005B17E1 /* Debug */,
+				153D21FA2B1E55ED005B17E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

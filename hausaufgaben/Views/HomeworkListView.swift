@@ -43,11 +43,13 @@ struct HomeworkListView: View {
                                 Label("BUTTON.REMOVE_ENTRY", image: "trash")
                             }
                         }
+                    /*
                         .swipeActions(edge: .leading) {
                             NavigationLink(destination: AddView()) {
                                 Label("BUTTON.EDIT", systemImage: "pencil")
                             }
                         }
+                     */
                 }
             }
             .sheet(isPresented: $editorPresented, content: {

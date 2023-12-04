@@ -1,14 +1,14 @@
 //
-//  hausaufgabenApp.swift
-//  hausaufgaben Watch App
+//  hausaufgaben_watchApp.swift
+//  hausaufgaben-watch Watch App
 //
-//  Created by Linus Warnatz on 12.10.23.
+//  Created by Linus Warnatz on 04.12.23.
 //
 
 import SwiftUI
 
 @main
-struct hausaufgaben_Watch_AppApp: App {
+struct hausaufgaben_watch_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

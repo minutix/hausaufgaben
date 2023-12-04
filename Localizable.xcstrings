@@ -18,6 +18,7 @@
       }
     },
     "%lld" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -76,20 +77,21 @@
       }
     },
     "BUTTON.EDIT" : {
-        "localizations" : {
-          "de" : {
-            "stringUnit" : {
-              "state" : "translated",
-              "value" : "Bearbeiten"
-            }
-          },
-          "en" : {
-            "stringUnit" : {
-              "state" : "translated",
-              "value" : "Edit"
-            }
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bearbeiten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit"
           }
         }
+      }
     },
     "BUTTON.MARK_DONE" : {
       "localizations" : {
