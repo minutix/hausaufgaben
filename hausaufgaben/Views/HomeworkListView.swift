@@ -24,18 +24,32 @@ struct HomeworkListView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) { item in
-                    Button {
-                        items[items.firstIndex(of: item)!].isDone.toggle()
-                    } label: {
-                        ListItemView(item: item)
-                            .padding()
-                    }
-                    .foregroundStyle(.primary)
+                ForEach(0..<items.count, id: \.self) { i in
+                    ListItemView(item: items[i])
+                        .padding()
+                        .swipeActions(edge: .trailing) {
+                            Button(action: {
+                                items[i].isDone.toggle()
+                            }, label:{
+                                if items[i].isDone {
+                                    Label("BUTTON.MARK_UNDONE", systemImage: "xmark.circle")
+                                } else {
+                                    Label("BUTTON.MARK_DONE", systemImage: "checkmark.circle")
+                                }
+                            })
+                            Button {
+                                modelContext.delete(items[i])
+                            } label: {
+                                Label("BUTTON.REMOVE_ENTRY", image: "trash")
+                            }
+                        }
+                        .swipeActions(edge: .leading) {
+                            NavigationLink(destination: AddView()) {
+                                Label("BUTTON.EDIT", systemImage: "pencil")
+                            }
+                        }
                 }
-                .onDelete(perform: deleteItems)
             }
-            .navigationTitle("STRING.LIST_VIEW.TITLE")
             .sheet(isPresented: $editorPresented, content: {
                 AddView()
             })
@@ -52,6 +66,7 @@ struct HomeworkListView: View {
                 }
             }
         }
+        .navigationTitle("STRING.LIST_VIEW.TITLE")
     }
 }
 

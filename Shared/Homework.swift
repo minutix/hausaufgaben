@@ -11,7 +11,7 @@ import SwiftData
 
 
 @Model
-final public class Homework {
+final public class Homework: Identifiable {
     var difficulty: Int
     var hasDueDate: Bool
     var dueDate: Date

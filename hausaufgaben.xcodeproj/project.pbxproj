@@ -35,11 +35,11 @@
 		15230D5E29CB7515006A568E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 15230D4F29CB7514006A568E /* README.md */; };
 		15230D5F29CB7515006A568E /* SECURITY.md in Resources */ = {isa = PBXBuildFile; fileRef = 15230D5029CB7514006A568E /* SECURITY.md */; };
 		15230D6129CB76C8006A568E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 15230D6029CB76C8006A568E /* .gitignore */; };
+		15653BE92ADA750800216640 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159C12AD84E6F00DEA26E /* AddView.swift */; };
 		15A492FC2912D8F500A22C72 /* hausaufgabenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A492FB2912D8F500A22C72 /* hausaufgabenApp.swift */; };
 		15A492FE2912D8F500A22C72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A492FD2912D8F500A22C72 /* ContentView.swift */; };
 		15A493002912D8F600A22C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A492FF2912D8F600A22C72 /* Assets.xcassets */; };
 		15A493032912D8F600A22C72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A493022912D8F600A22C72 /* Preview Assets.xcassets */; };
-		15BEC7962912F9810055D81E /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEC7952912F9810055D81E /* AddView.swift */; };
 		15C768E72AD5AB5900CC440C /* Homework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C768E62AD5AB5800CC440C /* Homework.swift */; };
 		15C768E92AD6F1F900CC440C /* HomeworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C768E82AD6F1F900CC440C /* HomeworkListView.swift */; };
 		15C768EB2AD6F3E100CC440C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 15C768EA2AD6F3E100CC440C /* Localizable.xcstrings */; };
@@ -92,7 +92,6 @@
 		15A492FD2912D8F500A22C72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		15A492FF2912D8F600A22C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15A493022912D8F600A22C72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		15BEC7952912F9810055D81E /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		15C768E62AD5AB5800CC440C /* Homework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homework.swift; sourceTree = "<group>"; };
 		15C768E82AD6F1F900CC440C /* HomeworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkListView.swift; sourceTree = "<group>"; };
 		15C768EA2AD6F3E100CC440C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -150,7 +149,6 @@
 			children = (
 				150159A62AD83F8C00DEA26E /* ContentView.swift */,
 				150159B62AD8405200DEA26E /* HomeworkListView.swift */,
-				150159C12AD84E6F00DEA26E /* AddView.swift */,
 				150159BD2AD841BC00DEA26E /* ListItemView.swift */,
 				150159BF2AD8446500DEA26E /* ItemDetailView.swift */,
 			);
@@ -160,6 +158,7 @@
 		150159B92AD840CD00DEA26E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				150159C12AD84E6F00DEA26E /* AddView.swift */,
 				15E2D5F82AAC4BB100469533 /* StarView.swift */,
 			);
 			path = Views;
@@ -201,7 +200,6 @@
 			children = (
 				15A492FD2912D8F500A22C72 /* ContentView.swift */,
 				15C768E82AD6F1F900CC440C /* HomeworkListView.swift */,
-				15BEC7952912F9810055D81E /* AddView.swift */,
 				150159BB2AD8412B00DEA26E /* ListItemView.swift */,
 			);
 			path = Views;
@@ -383,11 +381,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15653BE92ADA750800216640 /* AddView.swift in Sources */,
 				15E2D5F92AAC4BB100469533 /* StarView.swift in Sources */,
 				150159BC2AD8412B00DEA26E /* ListItemView.swift in Sources */,
 				15A492FE2912D8F500A22C72 /* ContentView.swift in Sources */,
 				15C768E92AD6F1F900CC440C /* HomeworkListView.swift in Sources */,
-				15BEC7962912F9810055D81E /* AddView.swift in Sources */,
 				15A492FC2912D8F500A22C72 /* hausaufgabenApp.swift in Sources */,
 				15C768E72AD5AB5900CC440C /* Homework.swift in Sources */,
 			);
@@ -402,10 +400,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = 3ZKC6VXD5Z;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -417,9 +417,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = .hausaufgaben.watchkit;
 				PRODUCT_NAME = HappyWork;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = HausaufgabenWatchKitApp;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -436,10 +437,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=watchos*]" = 3ZKC6VXD5Z;
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -451,9 +454,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = .hausaufgaben.watchkit;
 				PRODUCT_NAME = HappyWork;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = HausaufgabenWatchKitApp;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -595,7 +599,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3ZKC6VXD5Z;
@@ -607,14 +611,14 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.miwarn.hausaufgaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -637,7 +641,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"hausaufgaben/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3ZKC6VXD5Z;
@@ -649,14 +653,14 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.miwarn.hausaufgaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

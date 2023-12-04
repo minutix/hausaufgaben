@@ -11,7 +11,7 @@ struct ListItemView: View {
     var item: Homework
     var body: some View {
         HStack {
-            VStack {
+            VStack(alignment: .leading) {
                 Text(item.lesson)
                     .bold()
                 Text(item.text)

@@ -29,10 +29,10 @@ struct ItemDetailView: View {
                 Image(systemName: item.isDone ? "checkmark.circle.fill" : "checkmark.circle")
             }
             StarView(difficulty: item.difficulty)
-            Button(item.isDone ? "BUTTON.WATCH.MARK_DONE": "BUTTON.WATCH.MARK_UNDONE") {
+            Button(item.isDone ? "BUTTON.MARK_UNDONE": "BUTTON.MARK_DONE") {
                 items[items.firstIndex(of: item)!].isDone.toggle()
             }
-            Button("BUTTON.WATCH.REMOVE_ENTRY", role: .destructive) {
+            Button("BUTTON.REMOVE_ENTRY", role: .destructive) {
                 modelContext.delete(item)
                 dismiss()
             }
