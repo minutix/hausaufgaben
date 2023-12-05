@@ -1,9 +1,9 @@
 # hausaufgaben
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/libewa/hausaufgaben/blob/2403fe075b51adbe4a5dfe2c45508dc0d2a4c58c/promo/happen___hausaufgaben-1280x720%202.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/libewa/hausaufgaben/blob/2403fe075b51adbe4a5dfe2c45508dc0d2a4c58c/promo/happen___hausaufgaben-1280x720.png">
-  <img alt="New Launch Alert. Ready, Set, Get!" src="https://github.com/libewa/hausaufgaben/blob/2403fe075b51adbe4a5dfe2c45508dc0d2a4c58c/promo/happen___hausaufgaben-1280x720.png">
+  <source media="(prefers-color-scheme: dark)" srcset="./promo/banner_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="./promo/banner_light.png">
+  <img alt="New Launch Alert. Ready, Set, Get!" src="./promo/banner_light.png">
 </picture>
 
 hausaufgaben (homework in german) is an app to note down homework. It uses CoreData to store the homework list.
@@ -15,7 +15,7 @@ I am welcome to feature requests and community bugfixes. Look at the [Contributi
 
 ### App Store
 
-[![Download on the App Store](promo/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg)](https://apple.co/3HuiULK)
+<a href="https://apps.apple.com/us/app/happywork-homework-app/id6444293099?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1670716800" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
 
 ### TestFlight
 https://testflight.apple.com/join/nopmEm9m
