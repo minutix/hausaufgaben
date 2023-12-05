@@ -34,6 +34,7 @@
       }
     },
     "BUTTON.ADD_SHEET.CANCEL" : {
+      "comment" : "The Cancel button to dismiss the AddView sheet",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -50,6 +51,7 @@
       }
     },
     "BUTTON.ADD_SHEET.DONE" : {
+      "comment" : "The Done button for the AddView to dismiss the sheet and push the new task.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -66,6 +68,7 @@
       }
     },
     "BUTTON.ADD_SHEET.ERROR.EMPTY.OK" : {
+      "comment" : "The button to dismiss the AddView empty text field error (most likely something like \"OK\", \"Dismiss\" or similar)",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -82,6 +85,7 @@
       }
     },
     "BUTTON.EDIT" : {
+      "comment" : "The slide action/button to edit an item",
       "extractionState" : "stale",
       "localizations" : {
         "de" : {
@@ -99,6 +103,7 @@
       }
     },
     "BUTTON.MARK_DONE" : {
+      "comment" : "The \"Mark Undone\" slide action/button in the list or detail view, when the item is not done",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -115,6 +120,7 @@
       }
     },
     "BUTTON.MARK_UNDONE" : {
+      "comment" : "The \"Mark Undone\" slide action/button in the list or detail view, when the item is already done",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -131,6 +137,7 @@
       }
     },
     "BUTTON.REMOVE_ENTRY" : {
+      "comment" : "The slide action/button to delete an item",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -147,6 +154,7 @@
       }
     },
     "ERROR.ADD_SHEET.EMPTY" : {
+      "comment" : "The error in the AddView that prevents the user from adding a task with empty text",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -163,6 +171,7 @@
       }
     },
     "LABEL.ADD_SHEET.DIFFICULTY" : {
+      "comment" : "The label for the Difficulty stepper in the AddView (on watchOS)",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -178,7 +187,25 @@
         }
       }
     },
+    "LABEL.ADD_SHEET.DIFFICULTY %lld" : {
+      "comment" : "The label for the Difficulty stepper in the AddView (except watchOS), with `%lld` being the difficulty",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schwierigkeit: %lld"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Difficulty: %lld"
+          }
+        }
+      }
+    },
     "LABEL.ADD_SHEET.DUE_DATE" : {
+      "comment" : "The label for the Due Date picker in the AddView",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -195,6 +222,7 @@
       }
     },
     "LABEL.ADD_SHEET.LESSON" : {
+      "comment" : "The label for the Lesson text field in the AddView",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -211,6 +239,7 @@
       }
     },
     "LABEL.ADD_SHEET.TASK" : {
+      "comment" : "The label for the Task text field in the AddView",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -227,6 +256,7 @@
       }
     },
     "LABEL.ADD_SHEET.TOGGLE_DUE_DATE" : {
+      "comment" : "The label for the \"Has Due Date\" toggle in the AddView",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -243,6 +273,7 @@
       }
     },
     "STRING.ADD_SHEET.TITLE" : {
+      "comment" : "The title for the AddView sheet. Empty on watchOS",
       "localizations" : {
         "de" : {
           "variations" : {

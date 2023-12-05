@@ -32,21 +32,21 @@ struct HomeworkListView: View {
                                 items[i].isDone.toggle()
                             }, label:{
                                 if items[i].isDone {
-                                    Label("BUTTON.MARK_UNDONE", systemImage: "xmark.circle")
+                                    Label(String(localized: "BUTTON.MARK_UNDONE", comment: "The \"Mark Undone\" slide action/button in the list or detail view, when the item is already done"), systemImage: "xmark.circle")
                                 } else {
-                                    Label("BUTTON.MARK_DONE", systemImage: "checkmark.circle")
+                                    Label(String(localized: "BUTTON.MARK_DONE", comment: "The \"Mark Undone\" slide action/button in the list or detail view, when the item is not done"), systemImage: "checkmark.circle")
                                 }
                             })
                             Button(role: .destructive) {
                                 modelContext.delete(items[i])
                             } label: {
-                                Label("BUTTON.REMOVE_ENTRY", image: "trash")
+                                Label(String(localized: "BUTTON.REMOVE_ENTRY", comment: "The slide action/button to delete an item"), image: "trash")
                             }
                         }
                     /*
                         .swipeActions(edge: .leading) {
                             NavigationLink(destination: AddView()) {
-                                Label("BUTTON.EDIT", systemImage: "pencil")
+                                Label(String(localized: "BUTTON.EDIT", comment: "The slide action/button to edit an item"), systemImage: "pencil")
                             }
                         }
                      */
