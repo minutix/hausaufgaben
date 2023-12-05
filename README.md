@@ -4,7 +4,7 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/libewa/hausaufgaben/blob/2403fe075b51adbe4a5dfe2c45508dc0d2a4c58c/promo/happen___hausaufgaben-1280x720%202.png">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/libewa/hausaufgaben/blob/2403fe075b51adbe4a5dfe2c45508dc0d2a4c58c/promo/happen___hausaufgaben-1280x720.png">
   <img alt="New Launch Alert. Ready, Set, Get!" src="https://github.com/libewa/hausaufgaben/blob/2403fe075b51adbe4a5dfe2c45508dc0d2a4c58c/promo/happen___hausaufgaben-1280x720.png
-
+</picture>
 
 hausaufgaben (homework in german) is an app to note down homework. It uses CoreData to store the homework list.
 
