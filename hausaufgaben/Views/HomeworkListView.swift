@@ -56,9 +56,6 @@ struct HomeworkListView: View {
                 AddView()
             })
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
                 ToolbarItem {
                     Button {
                         editorPresented = true
