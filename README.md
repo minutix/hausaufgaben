@@ -23,7 +23,8 @@ https://testflight.apple.com/join/nopmEm9m
 The App is now in a full release state but should still not be used without backup alternatives.
 
 # License
-This Source Code is licensed under the Mozilla Public License
+This Source Code is licensed under the Mozilla Public License, version 2.0.
+Previous versions of the Source Code (up until commit [6578e1b](https://github.com/libewa/hausaufgaben/commit/6578e1ba1949a99ce93072b08da7c4349e347ca4) were licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
 
 ## DISCLAIMER
 THIS SOFWARE IS PROVIDED AS-IS, WITHOUT WARRANTY OF ANY KIND.
