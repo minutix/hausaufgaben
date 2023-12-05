@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		150159BC2AD8412B00DEA26E /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159BB2AD8412B00DEA26E /* ListItemView.swift */; };
 		151365EF2B1E5B7900CC38FD /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 15C768EA2AD6F3E100CC440C /* Localizable.xcstrings */; };
-		15230D5129CB7515006A568E /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 15230D4129CB7513006A568E /* LICENSE.md */; };
 		15230D5229CB7515006A568E /* addView.png in Resources */ = {isa = PBXBuildFile; fileRef = 15230D4329CB7513006A568E /* addView.png */; };
 		15230D5329CB7515006A568E /* listView.pxd in Resources */ = {isa = PBXBuildFile; fileRef = 15230D4429CB7513006A568E /* listView.pxd */; };
 		15230D5429CB7515006A568E /* happen___hausaufgaben-1200x628.png in Resources */ = {isa = PBXBuildFile; fileRef = 15230D4529CB7513006A568E /* happen___hausaufgaben-1200x628.png */; };
@@ -78,7 +77,6 @@
 		150159BD2AD841BC00DEA26E /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		150159BF2AD8446500DEA26E /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 		150159C12AD84E6F00DEA26E /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
-		15230D4129CB7513006A568E /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		15230D4329CB7513006A568E /* addView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addView.png; sourceTree = "<group>"; };
 		15230D4429CB7513006A568E /* listView.pxd */ = {isa = PBXFileReference; lastKnownFileType = file; path = listView.pxd; sourceTree = "<group>"; };
 		15230D4529CB7513006A568E /* happen___hausaufgaben-1200x628.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "happen___hausaufgaben-1200x628.png"; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 			children = (
 				15230D6029CB76C8006A568E /* .gitignore */,
 				15230D4E29CB7514006A568E /* CONTRIBUTING.md */,
-				15230D4129CB7513006A568E /* LICENSE.md */,
 				15230D4D29CB7513006A568E /* PRIVACY.md */,
 				15230D4229CB7513006A568E /* promo */,
 				15230D4F29CB7514006A568E /* README.md */,
@@ -353,7 +350,6 @@
 				15230D6129CB76C8006A568E /* .gitignore in Resources */,
 				15230D5429CB7515006A568E /* happen___hausaufgaben-1200x628.png in Resources */,
 				15230D5829CB7515006A568E /* happen___hausaufgaben-1280x720 2.png in Resources */,
-				15230D5129CB7515006A568E /* LICENSE.md in Resources */,
 				15230D5929CB7515006A568E /* Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg in Resources */,
 				15C768EB2AD6F3E100CC440C /* Localizable.xcstrings in Resources */,
 				15230D5529CB7515006A568E /* social-preview.png in Resources */,
