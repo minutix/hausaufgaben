@@ -22,7 +22,7 @@ struct HomeworkListView: View {
     }
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(0..<items.count, id: \.self) { i in
                     ListItemView(item: items[i])
