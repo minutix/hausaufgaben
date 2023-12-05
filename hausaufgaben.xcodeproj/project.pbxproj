@@ -371,7 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.miwarn.hausaufgaben.watchkitapp;
 				PRODUCT_NAME = HappyWork;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = HausaufgabenWatchKitApp;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "Hausaufgaben WatchOS";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -408,7 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.miwarn.hausaufgaben.watchkitapp;
 				PRODUCT_NAME = HappyWork;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = HausaufgabenWatchKitApp;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "Hausaufgaben WatchOS";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -579,8 +579,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.miwarn.hausaufgaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = HausaufgabenApp;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = HausaufgabenMac;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Hausaufgaben iOS";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Hausaufgaben MacOS";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -626,8 +626,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.miwarn.hausaufgaben;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = HausaufgabenApp;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = HausaufgabenMac;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Hausaufgaben iOS";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Hausaufgaben MacOS";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
