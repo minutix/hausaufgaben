@@ -30,9 +30,9 @@ struct AddView: View {
                 VStack {
                     Text("LABEL.ADD_SHEET.DIFFICULTY")
                     #if os(watchOS)
-                    Stepper("\(difficulty)", value: $difficulty, in: 1...5)
+                    Stepper("\(difficulty)", value: $difficulty, in: 0...5)
                     #else
-                    Stepper(value: $difficulty, in: 1...5, label: {StarView(difficulty: difficulty)})
+                    Stepper(value: $difficulty, in: 0...5, label: {StarView(difficulty: difficulty)})
                     #endif
                 }
             }
