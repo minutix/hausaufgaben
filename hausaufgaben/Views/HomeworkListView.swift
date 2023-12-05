@@ -37,7 +37,7 @@ struct HomeworkListView: View {
                                     Label("BUTTON.MARK_DONE", systemImage: "checkmark.circle")
                                 }
                             })
-                            Button {
+                            Button(role: .destructive) {
                                 modelContext.delete(items[i])
                             } label: {
                                 Label("BUTTON.REMOVE_ENTRY", image: "trash")
