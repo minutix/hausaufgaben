@@ -16,7 +16,7 @@
 		153D21FD2B1E565B005B17E1 /* HomeworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159B62AD8405200DEA26E /* HomeworkListView.swift */; };
 		153D21FE2B1E565B005B17E1 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159BD2AD841BC00DEA26E /* ListItemView.swift */; };
 		153D21FF2B1E565B005B17E1 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159BF2AD8446500DEA26E /* ItemDetailView.swift */; };
-		153D22002B1E56AE005B17E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150159A82AD83F8D00DEA26E /* Assets.xcassets */; };
+		157CA27F2B1F8C48006C8491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157CA27E2B1F8C48006C8491 /* Assets.xcassets */; };
 		15A492FC2912D8F500A22C72 /* hausaufgabenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A492FB2912D8F500A22C72 /* hausaufgabenApp.swift */; };
 		15A493002912D8F600A22C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A492FF2912D8F600A22C72 /* Assets.xcassets */; };
 		15A493032912D8F600A22C72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15A493022912D8F600A22C72 /* Preview Assets.xcassets */; };
@@ -58,7 +58,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		150159A82AD83F8D00DEA26E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../hausaufgaben Watch App/Assets.xcassets"; sourceTree = "<group>"; };
 		150159B62AD8405200DEA26E /* HomeworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkListView.swift; sourceTree = "<group>"; };
 		150159BB2AD8412B00DEA26E /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		150159BD2AD841BC00DEA26E /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		153D21F42B1E55ED005B17E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		156B36CE2B1F38A000D6B5D1 /*  */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ""; sourceTree = SOURCE_ROOT; };
 		15761F7629D6BA520073799E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		157CA27E2B1F8C48006C8491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15A492F82912D8F500A22C72 /* hausaufgaben.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hausaufgaben.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A492FB2912D8F500A22C72 /* hausaufgabenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hausaufgabenApp.swift; sourceTree = "<group>"; };
 		15A492FF2912D8F600A22C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,9 +111,9 @@
 		153D21EC2B1E55EB005B17E1 /* hausaufgaben-watch Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				157CA27E2B1F8C48006C8491 /* Assets.xcassets */,
 				153D21ED2B1E55EB005B17E1 /* hausaufgaben_watchApp.swift */,
 				153D21FC2B1E564E005B17E1 /* Views */,
-				150159A82AD83F8D00DEA26E /* Assets.xcassets */,
 				153D21F32B1E55ED005B17E1 /* Preview Content */,
 			);
 			path = "hausaufgaben-watch Watch App";
@@ -279,9 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				153D22002B1E56AE005B17E1 /* Assets.xcassets in Resources */,
 				153D21F52B1E55ED005B17E1 /* Preview Assets.xcassets in Resources */,
 				15F4AF442B1F456C00684F4D /* LICENSE in Resources */,
+				157CA27F2B1F8C48006C8491 /* Assets.xcassets in Resources */,
 				151365EF2B1E5B7900CC38FD /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
