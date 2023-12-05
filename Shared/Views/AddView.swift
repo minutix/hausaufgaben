@@ -73,8 +73,8 @@ struct AddView: View {
     }
 }
 
-struct AddView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddView()
-    }
+#Preview {
+    AddView()
+        .modelContainer(for: Homework.self, inMemory: true)
 }
+

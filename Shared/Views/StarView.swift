@@ -40,12 +40,10 @@ struct StarView: View {
     }
 }
 
-struct StarView_Previews: PreviewProvider {
-    static var previews: some View {
-        VStack {
-            ForEach(1...5, id: \.self) { diff in
-                StarView(difficulty: diff)
-            }
+#Preview {
+    VStack {
+        ForEach(1...5, id: \.self) { diff in
+            StarView(difficulty: diff)
         }
     }
 }

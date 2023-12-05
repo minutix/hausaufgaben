@@ -26,5 +26,9 @@ struct ListItemView: View {
 }
 
 #Preview {
-    ListItemView(item: Homework(difficulty: 3, dueDate: Date(), lesson: "NwT", text: "Test"))
+    List {
+        ListItemView(item: Homework(difficulty: 3, dueDate: Date(), lesson: "NwT", text: "Test"))
+        ListItemView(item: Homework(difficulty: 3, dueDate: Date(), lesson: "NwT", text: "Test"))
+        ListItemView(item: Homework(difficulty: 3, dueDate: Date(), lesson: "NwT", text: "Test"))
+    }
 }

@@ -43,4 +43,5 @@ struct HomeworkListView: View {
 }
 #Preview {
     HomeworkListView()
+        .modelContainer(for: Homework.self, inMemory: true)
 }
