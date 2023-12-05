@@ -23,12 +23,11 @@ https://testflight.apple.com/join/nopmEm9m
 The App is now in a full release state but should still not be used without backup alternatives.
 
 # License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">libewa/hausaufgaben</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/libewa" property="cc:attributionName" rel="cc:attributionURL">libewa</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-
-You can read the full license in the [`LICENSE` file](LICENSE.md) or on [creativecommons.org](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
+This Source Code is licensed under the Mozilla Public License, version 2.0.
+Previous versions of the Source Code (up until commit [6578e1b](https://github.com/libewa/hausaufgaben/commit/6578e1ba1949a99ce93072b08da7c4349e347ca4) were licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
 
 ## DISCLAIMER
-As defined under [Section 5](https://github.com/libewa/hausaufgaben/blob/main/LICENSE.md#s5) of the License, THIS SOFWARE IS PROVIDED AS-IS, WITHOUT WARRANTY OF ANY KIND.
+THIS SOFWARE IS PROVIDED AS-IS, WITHOUT WARRANTY OF ANY KIND.
 
 ## Contributing
 Read [CONTRIBUTING.md](CONTRIBUTING.md)
