@@ -58,6 +58,9 @@ struct AddView: View {
                     .alert(String(localized: "ERROR.ADD_SHEET.EMPTY", comment: "The error in the AddView that prevents the user from adding a task with empty text"), isPresented: $alertPresented, actions: {Button(action: {alertPresented = false}, label: {Text("BUTTON.ADD_SHEET.ERROR.EMPTY.OK", comment: "The button to dismiss the AddView empty text field error (most likely something like \"OK\", \"Dismiss\" or similar)")})})
                 }
             }
+            #if os(macOS)
+            .padding()
+            #endif
         }
         .navigationTitle(String(localized: "STRING.ADD_SHEET.TITLE", comment: "The title for the AddView sheet. Empty on watchOS"))
     }

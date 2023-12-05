@@ -12,7 +12,7 @@
 		153D21EE2B1E55EB005B17E1 /* hausaufgaben_watchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153D21ED2B1E55EB005B17E1 /* hausaufgaben_watchApp.swift */; };
 		153D21F02B1E55EB005B17E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153D21EF2B1E55EB005B17E1 /* ContentView.swift */; };
 		153D21F52B1E55ED005B17E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153D21F42B1E55ED005B17E1 /* Preview Assets.xcassets */; };
-		153D21F82B1E55ED005B17E1 /* HappyWork.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 153D21EB2B1E55EB005B17E1 /* HappyWork.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		153D21F82B1E55ED005B17E1 /* HappyWork.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 153D21EB2B1E55EB005B17E1 /* HappyWork.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		153D21FD2B1E565B005B17E1 /* HomeworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159B62AD8405200DEA26E /* HomeworkListView.swift */; };
 		153D21FE2B1E565B005B17E1 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159BD2AD841BC00DEA26E /* ListItemView.swift */; };
 		153D21FF2B1E565B005B17E1 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150159BF2AD8446500DEA26E /* ItemDetailView.swift */; };
@@ -336,6 +336,7 @@
 /* Begin PBXTargetDependency section */
 		153D21F72B1E55ED005B17E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 153D21EA2B1E55EB005B17E1 /* hausaufgaben-watch Watch App */;
 			targetProxy = 153D21F62B1E55ED005B17E1 /* PBXContainerItemProxy */;
 		};
@@ -572,7 +573,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = HausaufgabenApp;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -615,7 +616,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = HausaufgabenApp;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
