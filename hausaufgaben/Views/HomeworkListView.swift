@@ -26,6 +26,22 @@ struct HomeworkListView: View {
             List {
                 ForEach(0..<items.count, id: \.self) { i in
                     ListItemView(item: items[i])
+                        .contextMenu(menuItems: {
+                            Button(role: .destructive) {
+                                modelContext.delete(items[i])
+                            } label: {
+                                Label(String(localized: "BUTTON.REMOVE_ENTRY", comment: "The slide action/button to delete an item"), image: "trash")
+                            }
+                            Button(action: {
+                                items[i].isDone.toggle()
+                            }, label:{
+                                if items[i].isDone {
+                                    Label(String(localized: "BUTTON.MARK_UNDONE", comment: "The \"Mark Undone\" slide action/button in the list or detail view, when the item is already done"), systemImage: "xmark.circle")
+                                } else {
+                                    Label(String(localized: "BUTTON.MARK_DONE", comment: "The \"Mark Undone\" slide action/button in the list or detail view, when the item is not done"), systemImage: "checkmark.circle")
+                                }
+                            })
+                        })
                         .padding()
                         .swipeActions(edge: .trailing) {
                             Button(action: {
