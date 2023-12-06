@@ -56,7 +56,7 @@ struct HomeworkListView: View {
                             Button(role: .destructive) {
                                 modelContext.delete(items[i])
                             } label: {
-                                Label(String(localized: "BUTTON.REMOVE_ENTRY", comment: "The slide action/button to delete an item"), image: "trash")
+                                Label(String(localized: "BUTTON.REMOVE_ENTRY", comment: "The slide action/button to delete an item"), systemImage: "trash")
                             }
                         }
                     /*
