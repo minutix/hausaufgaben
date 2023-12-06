@@ -66,6 +66,7 @@
 		153D21ED2B1E55EB005B17E1 /* hausaufgaben_watchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hausaufgaben_watchApp.swift; sourceTree = "<group>"; };
 		153D21EF2B1E55EB005B17E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		153D21F42B1E55ED005B17E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		155EB1982B20D23900A80E03 /* hausaufgaben-watch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "hausaufgaben-watch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		156B36CE2B1F38A000D6B5D1 /*  */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ""; sourceTree = SOURCE_ROOT; };
 		15761F7629D6BA520073799E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		157CA27E2B1F8C48006C8491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 		153D21EC2B1E55EB005B17E1 /* hausaufgaben-watch Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				155EB1982B20D23900A80E03 /* hausaufgaben-watch-Watch-App-Info.plist */,
 				157CA2812B1F9B46006C8491 /* hausaufgaben-watch Watch App.entitlements */,
 				157CA27E2B1F8C48006C8491 /* Assets.xcassets */,
 				153D21ED2B1E55EB005B17E1 /* hausaufgaben_watchApp.swift */,
@@ -360,6 +362,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hausaufgaben-watch-Watch-App-Info.plist";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = io.github.miwarn.hausaufgaben;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
@@ -397,6 +400,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "hausaufgaben-watch-Watch-App-Info.plist";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = io.github.miwarn.hausaufgaben;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
