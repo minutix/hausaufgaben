@@ -32,7 +32,8 @@ THIS SOFWARE IS PROVIDED AS-IS, WITHOUT WARRANTY OF ANY KIND.
 ## Contributing
 Read [CONTRIBUTING.md](CONTRIBUTING.md)
 
-Translations are provided using [Codeberg Translate (Weblate)](https://translate.codeberg.org/projects/hausaufgaben/)
+Translations are provided using [Codeberg Translate (Weblate)](https://translate.codeberg.org/engage/hausaufgaben/)
+[![Übersetzungsstatus](https://translate.codeberg.org/widget/hausaufgaben/open-graph.png)](https://translate.codeberg.org/engage/hausaufgaben/)
 
 ## Made using
 
