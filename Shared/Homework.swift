@@ -12,12 +12,12 @@ import SwiftData
 
 @Model
 final public class Homework: Identifiable {
-    var difficulty: Int
-    var hasDueDate: Bool
-    var dueDate: Date
-    var isDone: Bool
-    var lesson: String
-    var text: String
+    var difficulty: Int = 0
+    var hasDueDate: Bool = false
+    var dueDate: Date = Date()
+    var isDone: Bool = false
+    var lesson: String = ""
+    var text: String = ""
     init(difficulty: Int, dueDate: Date?, lesson: String, text: String) {
         self.difficulty = difficulty
         self.hasDueDate = dueDate != nil
