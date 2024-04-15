@@ -9,7 +9,7 @@
   <img alt="New Launch Alert. Ready, Set, Get!" src="./promo/banner_light.png">
 </picture>
 
-hausaufgaben (homework in german) is an app to note down homework. It uses CoreData to store the homework list.
+hausaufgaben (homework in german) is an app to note down homework. It uses SwiftData to store the homework list.
 
 The app is made of 100% organically produced SwiftUI.
 I am welcome to feature requests and community bugfixes. Look at the [Contributing guide](CONTRIBUTING.md) for a list of labels and their purposes.
