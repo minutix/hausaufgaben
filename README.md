@@ -1,3 +1,6 @@
+> [!WARNING]
+> This repository has been moved to a new owner. Please change your git remotes accordingly!
+
 # hausaufgaben
 
 <picture>
