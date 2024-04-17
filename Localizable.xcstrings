@@ -18,6 +18,7 @@
       }
     },
     "%lld" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -33,8 +34,15 @@
         }
       }
     },
+    "ADD_SHEET_TITLE" : {
+      "comment" : "The title for the AddView sheet. Empty on watchOS"
+    },
+    "APP_NAME" : {
+
+    },
     "BUTTON.ADD_SHEET.CANCEL" : {
       "comment" : "The Cancel button to dismiss the AddView sheet",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -52,6 +60,7 @@
     },
     "BUTTON.ADD_SHEET.DONE" : {
       "comment" : "The Done button for the AddView to dismiss the sheet and push the new task.",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -69,6 +78,7 @@
     },
     "BUTTON.ADD_SHEET.ERROR.EMPTY.OK" : {
       "comment" : "The button to dismiss the AddView empty text field error (most likely something like \"OK\", \"Dismiss\" or similar)",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -104,6 +114,7 @@
     },
     "BUTTON.MARK_DONE" : {
       "comment" : "The \"Mark Undone\" slide action/button in the list or detail view, when the item is not done",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -121,6 +132,7 @@
     },
     "BUTTON.MARK_UNDONE" : {
       "comment" : "The \"Mark Undone\" slide action/button in the list or detail view, when the item is already done",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -138,6 +150,7 @@
     },
     "BUTTON.REMOVE_ENTRY" : {
       "comment" : "The slide action/button to delete an item",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -153,8 +166,30 @@
         }
       }
     },
+    "CANCEL" : {
+      "comment" : "A Cancel button to dismiss a sheet"
+    },
+    "DIFFICULTY" : {
+      "comment" : "The label for the Difficulty stepper in the AddView (on watchOS)"
+    },
+    "DIFFICULTY %lld" : {
+      "comment" : "The label for the Difficulty stepper in the AddView (except watchOS), with `%lld` being the difficulty"
+    },
+    "DONE" : {
+      "comment" : "A Done button to dismiss a sheet, saving changes"
+    },
+    "DONE_BUTTON" : {
+      "comment" : "The \"Mark Undone\" slide action/button in the list or detail view, when the item is not done"
+    },
+    "DUE_DATE" : {
+      "comment" : "The label for the Due Date picker in the AddView"
+    },
+    "ERROR_TEXT_FIELDS_EMPTY" : {
+      "comment" : "The error in the AddView that prevents the user from adding a task with empty text"
+    },
     "ERROR.ADD_SHEET.EMPTY" : {
       "comment" : "The error in the AddView that prevents the user from adding a task with empty text",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -170,8 +205,15 @@
         }
       }
     },
+    "HappyWork" : {
+
+    },
+    "HAS_DUE_DATE" : {
+      "comment" : "The label for the \"Has Due Date\" toggle in the AddView"
+    },
     "LABEL.ADD_SHEET.DIFFICULTY" : {
       "comment" : "The label for the Difficulty stepper in the AddView (on watchOS)",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -189,6 +231,7 @@
     },
     "LABEL.ADD_SHEET.DIFFICULTY %lld" : {
       "comment" : "The label for the Difficulty stepper in the AddView (except watchOS), with `%lld` being the difficulty",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -206,6 +249,7 @@
     },
     "LABEL.ADD_SHEET.DUE_DATE" : {
       "comment" : "The label for the Due Date picker in the AddView",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -223,6 +267,7 @@
     },
     "LABEL.ADD_SHEET.LESSON" : {
       "comment" : "The label for the Lesson text field in the AddView",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -240,6 +285,7 @@
     },
     "LABEL.ADD_SHEET.TASK" : {
       "comment" : "The label for the Task text field in the AddView",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -257,6 +303,7 @@
     },
     "LABEL.ADD_SHEET.TOGGLE_DUE_DATE" : {
       "comment" : "The label for the \"Has Due Date\" toggle in the AddView",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -272,8 +319,24 @@
         }
       }
     },
+    "LESSON" : {
+
+    },
+    "MARK_DONE" : {
+
+    },
+    "MARK_UNDONE" : {
+
+    },
+    "OK" : {
+
+    },
+    "REMOVE_ITEM" : {
+      "comment" : "The slide action/button to delete an item"
+    },
     "STRING.ADD_SHEET.TITLE" : {
       "comment" : "The title for the AddView sheet. Empty on watchOS",
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "variations" : {
@@ -314,6 +377,7 @@
       }
     },
     "STRING.LIST_VIEW.TITLE" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -328,6 +392,12 @@
           }
         }
       }
+    },
+    "TASK" : {
+
+    },
+    "UNDONE_BUTTON" : {
+      "comment" : "The \"Mark Undone\" slide action/button in the list or detail view, when the item is already done"
     }
   },
   "version" : "1.0"
