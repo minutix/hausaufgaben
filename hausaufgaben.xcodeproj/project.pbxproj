@@ -65,7 +65,7 @@
 		151678B82BD00CBC0030F6DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		151678BB2BD00CC40030F6DB /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		151678BC2BD00CC70030F6DB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		151678BF2BD0205C0030F6DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/base.strings; sourceTree = "<group>"; };
+		151678C02BD022170030F6DB /* base.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = base.strings; sourceTree = "<group>"; };
 		153D21EB2B1E55EB005B17E1 /* HappyWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		153D21ED2B1E55EB005B17E1 /* hausaufgaben_watchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hausaufgaben_watchApp.swift; sourceTree = "<group>"; };
 		153D21EF2B1E55EB005B17E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				151678B72BD00CBC0030F6DB /* Localizable.strings */,
-				151678BE2BD0205C0030F6DB /* base.strings */,
+				151678C02BD022170030F6DB /* base.strings */,
 			);
 			path = Localizations;
 			sourceTree = "<group>";
@@ -366,14 +366,6 @@
 				151678BC2BD00CC70030F6DB /* de */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		151678BE2BD0205C0030F6DB /* base.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				151678BF2BD0205C0030F6DB /* en */,
-			);
-			name = base.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
