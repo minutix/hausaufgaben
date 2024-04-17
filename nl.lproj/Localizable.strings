@@ -1,0 +1,49 @@
+/* 
+  Localizable.strings (Dutch)
+  hausaufgaben
+
+  Created by Linus Warnatz on 17.04.24.
+  
+*/
+
+// The title for the AddView sheet.
+"ADD_SHEET_TITLE" = "";
+
+// A Cancel button to dismiss a sheet.
+"CANCEL" = "Cancel";
+
+// The label for the Difficulty stepper in the AddView (on watchOS).
+"DIFFICULTY" = "";
+
+// The label for the Difficulty stepper in the AddView (except watchOS), with `%lld` being the difficulty.
+"DIFFICULTY %lld" = "";
+
+// A Done button to dismiss a sheet, saving changes.
+"DONE" = "";
+
+// The label for the Due Date picker in the AddView.
+"DUE_DATE" = "";
+
+// The error in the AddView that prevents the user from adding a task with empty text.
+"ERROR_TEXT_FIELDS_EMPTY" = "";
+
+// The label for the "Has Due Date" toggle in the AddView.
+"HAS_DUE_DATE" = "";
+
+// The label for the Lesson text field in the AddView.
+"LESSON" = "";
+
+// The "Mark Undone" slide action/button in the list or detail view, when the item is not done.
+"MARK_DONE" = "";
+
+// The "Mark Undone" slide action/button in the list or detail view, when the item is already done.
+"MARK_UNDONE" = "";
+
+// The OK button in a sheet or modal.
+"OK" = "OK";
+
+// The slide action/button to delete an item.
+"REMOVE_ITEM" = "";
+
+// The label for the Task text field in the AddView.
+"TASK" = "";

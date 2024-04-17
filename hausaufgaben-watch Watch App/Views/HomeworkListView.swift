@@ -25,7 +25,7 @@ struct HomeworkListView: View {
                     }
                 }
             }
-            .navigationTitle("STRING.LIST_VIEW.TITLE")
+            .navigationTitle("APP_NAME")
             .sheet(isPresented: $editorPresented, content: {
                 AddView()
             })

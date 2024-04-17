@@ -30,15 +30,15 @@ struct HomeworkListView: View {
                             Button(role: .destructive) {
                                 modelContext.delete(items[i])
                             } label: {
-                                Label(String(localized: "BUTTON.REMOVE_ENTRY", comment: "The slide action/button to delete an item"), image: "trash")
+                                Label(String(localized: "REMOVE_ITEM", comment: "The slide action/button to delete an item"), image: "trash")
                             }
                             Button(action: {
                                 items[i].isDone.toggle()
                             }, label:{
                                 if items[i].isDone {
-                                    Label(String(localized: "BUTTON.MARK_UNDONE", comment: "The \"Mark Undone\" slide action/button in the list or detail view, when the item is already done"), systemImage: "xmark.circle")
+                                    Label(String(localized: "UNDONE_BUTTON", comment: "The \"Mark Undone\" slide action/button in the list or detail view, when the item is already done"), systemImage: "xmark.circle")
                                 } else {
-                                    Label(String(localized: "BUTTON.MARK_DONE", comment: "The \"Mark Undone\" slide action/button in the list or detail view, when the item is not done"), systemImage: "checkmark.circle")
+                                    Label(String(localized: "DONE_BUTTON", comment: "The \"Mark Undone\" slide action/button in the list or detail view, when the item is not done"), systemImage: "checkmark.circle")
                                 }
                             })
                         })
@@ -48,21 +48,21 @@ struct HomeworkListView: View {
                                 items[i].isDone.toggle()
                             }, label:{
                                 if items[i].isDone {
-                                    Label(String(localized: "BUTTON.MARK_UNDONE", comment: "The \"Mark Undone\" slide action/button in the list or detail view, when the item is already done"), systemImage: "xmark.circle")
+                                    Label(String(localized: "MARK_UNDONE", comment: "The \"Mark Undone\" slide action/button in the list or detail view, when the item is already done"), systemImage: "xmark.circle")
                                 } else {
-                                    Label(String(localized: "BUTTON.MARK_DONE", comment: "The \"Mark Undone\" slide action/button in the list or detail view, when the item is not done"), systemImage: "checkmark.circle")
+                                    Label(String(localized: "MARK_DONE", comment: "The \"Mark Undone\" slide action/button in the list or detail view, when the item is not done"), systemImage: "checkmark.circle")
                                 }
                             })
                             Button(role: .destructive) {
                                 modelContext.delete(items[i])
                             } label: {
-                                Label(String(localized: "BUTTON.REMOVE_ENTRY", comment: "The slide action/button to delete an item"), systemImage: "trash")
+                                Label(String(localized: "REMOVE_ITEM", comment: "The slide action/button to delete an item"), systemImage: "trash")
                             }
                         }
                     /*
                         .swipeActions(edge: .leading) {
                             NavigationLink(destination: AddView()) {
-                                Label(String(localized: "BUTTON.EDIT", comment: "The slide action/button to edit an item"), systemImage: "pencil")
+                                Label(String(localized: "EDIT_ITEM", comment: "The slide action/button to edit an item"), systemImage: "pencil")
                             }
                         }
                      */
@@ -81,7 +81,7 @@ struct HomeworkListView: View {
                 }
             }
         }
-        .navigationTitle("STRING.LIST_VIEW.TITLE")
+        .navigationTitle("HappyWork")
     }
 }
 
