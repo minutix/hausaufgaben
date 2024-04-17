@@ -144,7 +144,6 @@
 		15A492EF2912D8F500A22C72 = {
 			isa = PBXGroup;
 			children = (
-				15C768EA2AD6F3E100CC440C /* Localizable.xcstrings */,
 				15F4AF3B2B1F456C00684F4D /* Shared */,
 				15A492FA2912D8F500A22C72 /* hausaufgaben */,
 				153D21EC2B1E55EB005B17E1 /* hausaufgaben-watch Watch App */,
@@ -185,6 +184,7 @@
 		15F4AF3B2B1F456C00684F4D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				15C768EA2AD6F3E100CC440C /* Localizable.xcstrings */,
 				15F4AF3C2B1F456C00684F4D /* Homework.swift */,
 				15F4AF3D2B1F456C00684F4D /* LICENSE */,
 				15F4AF3E2B1F456C00684F4D /* Views */,
